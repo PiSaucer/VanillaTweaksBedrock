@@ -7,6 +7,8 @@ In case Vanilla Tweaks releases the offical Bedrock Resource Packs, I would remo
 
 # Vanilla Tweaks ─ Terms and Usage 
 
+Regarding using Vanilla Tweaks in your own projects
+
 It is perfectly fine for anyone to use, modify and share our packs within their projects for the betterment of the community.
 However, you may only do so if it does not infringe on the following terms and conditions:
 
@@ -28,7 +30,13 @@ However, you may only do so if it does not infringe on the following terms and c
 
 2.1. You must include the below text on all main publishing platforms that you may use. (Minecraft Forum, Planet Minecraft, Minecraft Maps, Curseforge, etc.).
 
-2.2. You must create a credits.txt within your project.
+2.2 You must create a credits.txt within your project that includes the below text.
+
+```
+Credits:
+Vanilla Tweaks: https://vanillatweaks.net/
+
+```
 
 All picture assets belong to the Vanilla Tweaks Team.
 .mcpacks that are not ours are credited
