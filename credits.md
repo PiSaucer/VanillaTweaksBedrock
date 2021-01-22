@@ -7,6 +7,7 @@
 - alt03b1
 - lithium-lx
 - KaanGaming
+- amybluesky - Lower Shield - [curseforge](https://www.curseforge.com/minecraft/mc-addons/lower-shield-by-amybluesky/files)
 
 ## [Vanilla Tweaks Team](https://vanillatweaks.net/)
 - André Paulo - Web development
