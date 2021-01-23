@@ -7,7 +7,7 @@
 - alt03b1
 - lithium-lx
 - KaanGaming
-- amybluesky - Lower Shield - [curseforge](https://www.curseforge.com/minecraft/mc-addons/lower-shield-by-amybluesky/files)
+- amybluesky - Lower Shield - [curseforge](https://www.curseforge.com/minecraft/mc-addons/lower-shield-by-amybluesky/files) 
 
 ## [Vanilla Tweaks Team](https://vanillatweaks.net/)
 - André Paulo - Web development
@@ -19,10 +19,15 @@
 - tr33c – Pack development
 - Upperjeans – Pack development
 - Pollie – Pack development
+```txt
+Credits:
+Vanilla Tweaks: https://vanillatweaks.net/
+```
 
-## Other Thanks
+## Web Libraries used
 - [JSZip Team](https://stuk.github.io/jszip/)
 - [FileSaver Team](https://github.com/eligrey/FileSaver.js/)
 - [jQuery Team](https://jquery.com/)
 - [Bootstrap Team](https://getbootstrap.com/)
-- and to You for using this program
+
+## Other Thanks
