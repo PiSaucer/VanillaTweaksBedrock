@@ -1,0 +1,1 @@
+## No Vignette - Bedrock doesn't have a vignette (find other source)

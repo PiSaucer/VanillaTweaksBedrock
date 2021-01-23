@@ -1,0 +1,15 @@
+#download_form li {
+    list-style: none;
+}
+
+.hide {
+    display: none!important
+}
+
+.warningColorRed {
+    color: #e74c3c;
+}
+
+.warningColoryellow {
+    color: #f39c12;
+}
