@@ -1,33 +1,3 @@
-## [Cherry Picking](https://www.dropbox.com/s/e79vo64e3kfyv1d/che_pick.mcpack?dl=1)
-
-<img src="https://vanillatweaks.net/assets/resources/icons/resourcepacks/1.15/CherryPicking.png?v1" height="64"> <img src="https://vanillatweaks.net/assets/resources/previews/resourcepacks/1.15/CherryPicking.png?v1" width="260">
-
-Removes large cherry from center of Cake
-
-## [Different Stems](https://www.dropbox.com/s/1g09ya5ys7spqr2/diff_st.mcpack?dl=0) 
-
-<img src="https://vanillatweaks.net/assets/resources/icons/resourcepacks/1.15/DifferentStems.png?v1" height="64"> <img src="https://vanillatweaks.net/assets/resources/previews/resourcepacks/1.15/DifferentStems.png?v1" width="260">
-
-Changes Melon and Pumpkin stems to make them more curvaceous and natural looking
-
-## [Unbundled Hay Bales](https://www.dropbox.com/s/3sn912ggejlv505/unb_hay.mcpack?dl=1)
-
-![uhbi](https://vanillatweaks.net/assets/resources/icons/resourcepacks/1.15/UnbundledHayBales.png?v1) ![uhbp](https://vanillatweaks.net/assets/resources/previews/resourcepacks/1.15/UnbundledHayBales.png?v1)
-
-Removes the red strings around Hay Bales
-
-## [Sideways Nuggets](https://www.dropbox.com/s/2hmpbfvqgduph88/sid_nug.mcpack?dl=1)
-
-![sni](https://vanillatweaks.net/assets/resources/icons/resourcepacks/1.15/SidewaysNuggets.png?v1) ![snp](https://vanillatweaks.net/assets/resources/previews/resourcepacks/1.15/SidewaysNuggets.png?v1)
-
-Rotates Iron Nuggets to be consistent with the other nugget textures
-
-## [Softer Wool](https://www.dropbox.com/s/d33ukxme2uxfyxp/softwool.mcpack?dl=1)
-
-![swi](https://vanillatweaks.net/assets/resources/icons/resourcepacks/1.15/SofterWool.png?v1) <img src="https://vanillatweaks.net/assets/resources/previews/resourcepacks/1.15/SofterWool.png?v1" height="150">
-
-Lowers the contrast and smoothens all wool blocks
-
 ## [Plain Leather Armor](https://www.dropbox.com/s/1necf9d0z3k2msu/pl_le_ar.mcpack?dl=1)
 
 ![plai](https://vanillatweaks.net/assets/resources/icons/resourcepacks/1.15/PlainLeatherArmor.png?v1) ![plap](https://vanillatweaks.net/assets/resources/previews/resourcepacks/1.15/PlainLeatherArmor.png?v1)
