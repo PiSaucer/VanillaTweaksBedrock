@@ -13,3 +13,21 @@
 .warningColoryellow {
     color: #f39c12;
 }
+
+.logo {
+    width: 128px;
+    margin-top: 10px;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 256px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

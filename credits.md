@@ -4,8 +4,8 @@
 - PiSaucer - Web development
 
 ## [BedrockVanillaTweaks Team](https://github.com/alt03b1/BedrockVanillaTweaks)
-- alt03b1
-- lithium-lx
+- alt03b1 - resource packs
+- lithium-lx - behavior packs
 - KaanGaming
 - amybluesky - Lower Shield - [curseforge](https://www.curseforge.com/minecraft/mc-addons/lower-shield-by-amybluesky/files) 
 

@@ -1,6 +1,8 @@
 <h1 align="center">Welcome to VanillaTweaksBedrock 👋</h1>
 <p>
+  <a href="https://github.com/PiSaucer/VanillaTweaksBedrock/releases" target="_blank">
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
+</a>
   <a href="https://github.com/PiSaucer/VanillaTweaksBedrock/blob/main/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
@@ -8,12 +10,13 @@
 
 > an unofficial port of Minecraft Vanilla Tweaks for Bedrock
 
-Please read the [LEGAL_DISCLAIMER.md](LEGAL_DISCLAIMER.md) to verify that this a unoffical port.
+Please read the [LEGAL_DISCLAIMER.md](LEGAL_DISCLAIMER.md) to verify that this a unoffical port. Check out the [Credits](credits.md).
 
 ### 🏠 [Homepage](https://github.com/PiSaucer/VanillaTweaksBedrock)
 
 ### ✨ [Demo](https://vanillatweaksbedrock.web.app/)
-* The [Demo](https://vanillatweaksbedrock.web.app/) can only download 10 GB from all clients per month just as heads up.
+* The [demo](https://vanillatweaksbedrock.web.app/) can only download 10 GB from all clients per month just as heads up.
+* I also have a second demo at [vanillatweakbedrock.ml](https://vanillatweakbedrock.ml/)
 
 ## prerequisites
 * npm >= 6.14.4

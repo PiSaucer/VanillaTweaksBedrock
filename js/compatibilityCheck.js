@@ -36,6 +36,23 @@ document.getElementById('select-all').onchange = function() {
     var warn8 = document.getElementsByClassName('NoPumpWarning')[0];
     if (this.checked) warn8.classList.remove('hide');
     else warn8.classList.add('hide');
+    //altpart
+    var warn9 = document.getElementsByClassName('altpartWarning')[0];
+    if (this.checked) warn9.classList.remove('hide');
+    else warn9.classList.add('hide');
+    //unobrain
+    var warn10 = document.getElementsByClassName('unobrainWarning')[0];
+    if (this.checked) warn10.classList.remove('hide');
+    else warn10.classList.add('hide');
+    //BlackNetherBricks
+    var warn11 = document.getElementsByClassName('BlackNetherBricksWarning')[0];
+    if (this.checked) warn11.classList.remove('hide');
+    else warn11.classList.add('hide');
+    //brig_neth
+    var warn12 = document.getElementsByClassName('brig_nethWarning')[0];
+    if (this.checked) warn12.classList.remove('hide');
+    else warn12.classList.add('hide');
+
 }
 
 
@@ -91,6 +108,34 @@ document.getElementById('transPump').onchange = function() {
 //NoPump
 document.getElementById('NoPump').onchange = function() {
     var warn = document.getElementsByClassName('NoPumpWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//altpart
+document.getElementById('altpart').onchange = function() {
+    var warn = document.getElementsByClassName('altpartWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//unobrain
+document.getElementById('unobrain').onchange = function() {
+    var warn = document.getElementsByClassName('unobrainWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//BlackNetherBricks
+document.getElementById('BlackNetherBricks').onchange = function() {
+    var warn = document.getElementsByClassName('BlackNetherBricksWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//brig_neth
+document.getElementById('brig_neth').onchange = function() {
+    var warn = document.getElementsByClassName('brig_nethWarning')[0];
     if (this.checked) warn.classList.remove('hide');
     else warn.classList.add('hide');
 }
