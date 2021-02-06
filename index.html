@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vanilla Tweaks Bedrock</title>
 
     <!--Favicon Information-->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=xQ7PKzLjOX">
@@ -40,18 +39,41 @@
 
     <script type="text/javascript" src="js/FileSaver.js"></script>
     <script type="text/javascript" src="js/pack_icon_b64.js"></script>
+    <script type="text/javascript" src="js/collapsible.js"></script>
+
+    <!-- Primary Meta Tags -->
+    <title>Vanilla Tweaks Bedrock - Web App</title>
+    <meta name="title" content="Vanilla Tweaks Bedrock">
+    <meta name="description" content="An unofficial port of Minecraft Vanilla Tweaks for Bedrock - With Customize Downloading!!!">
+    <meta name="keywords" content="Vanilla Tweaks Bedrock web app, Vanilla Tweaks Bedrock, Vanilla Tweaks Ported to Bedrock, Vanilla Tweaks Minecraft Bedrock web app, Minecraft Bedrock Tweaks">
+    <meta name="language" content="English">
+    <meta name="author" content="PiSaucer">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vanillatweaksbedrock.web.app/">
+    <meta property="og:title" content="Vanilla Tweaks Bedrock">
+    <meta property="og:description" content="An unofficial port of Minecraft Vanilla Tweaks for Bedrock - With Customize Downloading!!!">
+    <meta property="og:image" content="/mcpack/_master/pack_icon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vanillatweaksbedrock.web.app/">
+    <meta property="twitter:title" content="Vanilla Tweaks Bedrock">
+    <meta property="twitter:description" content="An unofficial port of Minecraft Vanilla Tweaks for Bedrock - With Customize Downloading!!!">
+    <meta property="twitter:image" content="/mcpack/_master/pack_icon.png">
+
 </head>
 
 <body>
     <div class="container">
         <div class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
-                <div class="navbar-header">
+                <div class="navbar-header outer-logo">
                     <a class="navbar-brand" href="#"><img src="img/logo-2048.png" alt="logo" class="logo" width="128px"></a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <!--<a href="https://github.com/PiSaucer/VanillaTweaksBedrock" class="navbar-brand" target="_blank">Fork This Project on Github</a>-->
                         <a href="https://github.com/PiSaucer/VanillaTweaksBedrock" class="github-corner" target="_blank" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
                         <style>
                             .github-corner:hover .octo-arm {
@@ -93,221 +115,367 @@
                 <!-- ===================== -->
                 <!-- === C O N T E N T === -->
                 <!-- ===================== -->
-
                 <p>
-                    An <a href="legal.html" target="_blank">unofficial</a> port of Minecraft Vanilla Tweaks for Bedrock. Check out the <a href="credits.html" target="_blank">Credits</a>. <br> <span class="warningColorRed">Warning: If you select packs that use the same textures files, it will randomly choice one of the textures for you.</span>
+                    An <a href="legal.html" target="_blank">unofficial</a> port of Minecraft Vanilla Tweaks for Bedrock. Check out the <a href="credits.html" target="_blank">Credits</a>. This project follows the <a href="LICENSE.html" target="_blank">MIT LICENSE</a>.
+                    <br><span class="warningColorRed">Warning: If you select packs that use the same textures files, it will randomly choice one of the textures for you.</span>
                 </p>
 
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="downloader-result">
                         <div class="show-example">
                             <div id="downloader_application">
-                                <h2>Please select the packs you want</h3>
-                                    <form action="#" id="download_form">
-                                        <ul>
-                                            <li>
-                                                <input type="checkbox" id="select-all" data-amount=1 data-url1="" data-folder1="">
-                                                <label>Select All</label>
-                                            </li>
-                                            <h4>Aesthetic</h4>
-                                            <li>
-                                                <label>
-                <input type="checkbox" id="BlackNetherBricks" data-amount=4 data-url1="/mcpack/bl_ne_br/textures/blocks/chiseled_nether_bricks.png" data-folder1="textures/blocks" data-url2="/mcpack/bl_ne_br/textures/blocks/cracked_nether_bricks.png" data-folder2="textures/blocks" data-url3="/mcpack/bl_ne_br/textures/blocks/nether_brick.png" data-folder3="textures/blocks" data-url4="/mcpack/bl_ne_br/textures/items/netherbrick.png" data-folder4="textures/items"/>
+                                <h2>Please select the packs you want</h2>
+                                <form action="#" id="download_form">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="select-all" data-amount=1 data-url1="" data-folder1="">
+                                            <label>Select All</label>
+                                        </li>
+                                        <h3>Aesthetic</h3>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="BlackNetherBricks" data-amount=4 data-url1="/mcpack/aesthetic/bl_ne_br/textures/blocks/chiseled_nether_bricks.png" data-folder1="textures/blocks" data-url2="/mcpack/aesthetic/bl_ne_br/textures/blocks/cracked_nether_bricks.png" data-folder2="textures/blocks" data-url3="/mcpack/aesthetic/bl_ne_br/textures/blocks/nether_brick.png" data-folder3="textures/blocks" data-url4="/mcpack/aesthetic/bl_ne_br/textures/items/netherbrick.png" data-folder4="textures/items"/>
                 Black Nether Bricks <span class="BlackNetherBricksWarning hide warningColoryellow">WARNING: Will not work with Brighter Nether</span>
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=2 data-url1="/mcpack/che_pick/textures/blocks/cake_top.png" data-folder1="textures/blocks" data-url2="/mcpack/che_pick/textures/items/cake.png" data-folder2="textures/items"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=2 data-url1="/mcpack/aesthetic/che_pick/textures/blocks/cake_top.png" data-folder1="textures/blocks" data-url2="/mcpack/aesthetic/che_pick/textures/items/cake.png" data-folder2="textures/items"/>
                 Cherry Picking
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=4 data-url1="/mcpack/diff_st/textures/blocks/melon_stem_connected.png" data-folder1="textures/blocks" data-url2="/mcpack/diff_st/textures/blocks/melon_stem_disconnected.png" data-folder2="textures/blocks" data-url3="/mcpack/diff_st/textures/blocks/pumpkin_stem_connected.png" data-folder3="textures/blocks" data-url4="/mcpack/diff_st/textures/blocks/pumpkin_stem_disconnected.png" data-folder4="textures/blocks"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=4 data-url1="/mcpack/aesthetic/diff_st/textures/blocks/melon_stem_connected.png" data-folder1="textures/blocks" data-url2="/mcpack/aesthetic/diff_st/textures/blocks/melon_stem_disconnected.png" data-folder2="textures/blocks" data-url3="/mcpack/aesthetic/diff_st/textures/blocks/pumpkin_stem_connected.png" data-folder3="textures/blocks" data-url4="/mcpack/aesthetic/diff_st/textures/blocks/pumpkin_stem_disconnected.png" data-folder4="textures/blocks"/>
                 Different Stems
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=1 data-url1="/mcpack/unb_hay/textures/blocks/hay_block_side.png" data-folder1="textures/blocks"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=1 data-url1="/mcpack/aesthetic/unb_hay/textures/blocks/hay_block_side.png" data-folder1="textures/blocks"/>
                Unbundled Hay Bales
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=1 data-url1="/mcpack/sid_nug/textures/items/iron_nugget.png" data-folder1="textures/items"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=1 data-url1="/mcpack/aesthetic/sid_nug/textures/items/iron_nugget.png" data-folder1="textures/items"/>
                Sideways Nuggets
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=16 data-url1="/mcpack/softwool/textures/blocks/wool_colored_black.png" data-folder1="textures/blocks" data-url2="/mcpack/softwool/textures/blocks/wool_colored_blue.png" data-folder2="textures/blocks" data-url3="/mcpack/softwool/textures/blocks/wool_colored_brown.png" data-folder3="textures/blocks" data-url4="/mcpack/softwool/textures/blocks/wool_colored_cyan.png" data-folder4="textures/blocks" data-url5="/mcpack/softwool/textures/blocks/wool_colored_gray.png" data-folder5="textures/blocks" data-url6="/mcpack/softwool/textures/blocks/wool_colored_green.png" data-folder6="textures/blocks" data-url7="/mcpack/softwool/textures/blocks/wool_colored_light_blue.png" data-folder7="textures/blocks" data-url8="/mcpack/softwool/textures/blocks/wool_colored_lime.png" data-folder8="textures/blocks" data-url9="/mcpack/softwool/textures/blocks/wool_colored_magenta.png" data-folder9="textures/blocks" data-url10="/mcpack/softwool/textures/blocks/wool_colored_orange.png" data-folder10="textures/blocks" data-url11="/mcpack/softwool/textures/blocks/wool_colored_pink.png" data-folder11="textures/blocks" data-url12="/mcpack/softwool/textures/blocks/wool_colored_purple.png" data-folder12="textures/blocks" data-url13="/mcpack/softwool/textures/blocks/wool_colored_red.png" data-folder13="textures/blocks" data-url14="/mcpack/softwool/textures/blocks/wool_colored_silver.png" data-folder14="textures/blocks" data-url15="/mcpack/softwool/textures/blocks/wool_colored_white.png" data-folder15="textures/blocks" data-url16="/mcpack/softwool/textures/blocks/wool_colored_yellow.png" data-folder16="textures/blocks"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=16 data-url1="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_black.png" data-folder1="textures/blocks" data-url2="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_blue.png" data-folder2="textures/blocks" data-url3="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_brown.png" data-folder3="textures/blocks" data-url4="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_cyan.png" data-folder4="textures/blocks" data-url5="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_gray.png" data-folder5="textures/blocks" data-url6="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_green.png" data-folder6="textures/blocks" data-url7="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_light_blue.png" data-folder7="textures/blocks" data-url8="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_lime.png" data-folder8="textures/blocks" data-url9="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_magenta.png" data-folder9="textures/blocks" data-url10="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_orange.png" data-folder10="textures/blocks" data-url11="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_pink.png" data-folder11="textures/blocks" data-url12="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_purple.png" data-folder12="textures/blocks" data-url13="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_red.png" data-folder13="textures/blocks" data-url14="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_silver.png" data-folder14="textures/blocks" data-url15="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_white.png" data-folder15="textures/blocks" data-url16="/mcpack/aesthetic/softwool/textures/blocks/wool_colored_yellow.png" data-folder16="textures/blocks"/>
                 Softer Wool
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=6 data-url1="/mcpack/pl_le_ar/textures/items/leather_boots.png" data-folder1="textures/items" data-url2="/mcpack/pl_le_ar/textures/items/leather_chestplate.png" data-folder2="textures/items" data-url3="/mcpack/pl_le_ar/textures/items/leather_helmet.png" data-folder3="textures/items" data-url4="/mcpack/pl_le_ar/textures/items/leather_leggings.png" data-folder4="textures/items" data-url5="/mcpack/pl_le_ar/textures/models/armor/leather_1.png" data-folder5="textures/models/armor" data-url6="/mcpack/pl_le_ar/textures/models/armor/leather_2.png" data-folder6="textures/models/armor"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=6 data-url1="/mcpack/aesthetic/pl_le_ar/textures/items/leather_boots.png" data-folder1="textures/items" data-url2="/mcpack/aesthetic/pl_le_ar/textures/items/leather_chestplate.png" data-folder2="textures/items" data-url3="/mcpack/aesthetic/pl_le_ar/textures/items/leather_helmet.png" data-folder3="textures/items" data-url4="/mcpack/aesthetic/pl_le_ar/textures/items/leather_leggings.png" data-folder4="textures/items" data-url5="/mcpack/aesthetic/pl_le_ar/textures/models/armor/leather_1.png" data-folder5="textures/models/armor" data-url6="/mcpack/aesthetic/pl_le_ar/textures/models/armor/leather_2.png" data-folder6="textures/models/armor"/>
                 Plain Leather Armor
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=1 data-url1="/mcpack/red_ig_flow/textures/entity/iron_golem.png" data-folder1="textures/entity"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=1 data-url1="/mcpack/aesthetic/red_ig_flow/textures/entity/iron_golem.png" data-folder1="textures/entity"/>
                Red Iron Golem Flowers
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" id="altpart" data-amount=1 data-url1="/mcpack/alt_part/textures/particle/particles.png" data-folder1="textures/particle"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="altpart" data-amount=1 data-url1="/mcpack/aesthetic/alt_part/textures/particle/particles.png" data-folder1="textures/particle"/>
                Alternate Particles <span class="altpartWarning hide warningColoryellow">WARNING: Will not work with Unobtrusive Rain</span>
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=3 data-url1="/mcpack/less_purp_pur/textures/blocks/purpur_block.png" data-folder1="textures/blocks" data-url2="/mcpack/less_purp_pur/textures/blocks/purpur_pillar_top.png" data-folder2="textures/blocks" data-url3="/mcpack/less_purp_pur/textures/blocks/purpur_pillar.png" data-folder3="textures/blocks"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=3 data-url1="/mcpack/aesthetic/less_purp_pur/textures/blocks/purpur_block.png" data-folder1="textures/blocks" data-url2="/mcpack/aesthetic/less_purp_pur/textures/blocks/purpur_pillar_top.png" data-folder2="textures/blocks" data-url3="/mcpack/aesthetic/less_purp_pur/textures/blocks/purpur_pillar.png" data-folder3="textures/blocks"/>
                 Less Purple Purpur
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=5 data-url1="/mcpack/uniq_dyes/textures/items/dye_powder_gray.png" data-folder1="textures/items"  data-url2="/mcpack/uniq_dyes/textures/items/dye_powder_lime.png" data-folder2="textures/items" data-url3="/mcpack/uniq_dyes/textures/items/dye_powder_magenta.png" data-folder3="textures/items" data-url4="/mcpack/uniq_dyes/textures/items/dye_powder_pink.png" data-folder4="textures/items" data-url5="/mcpack/uniq_dyes/textures/items/dye_powder_purple.png" data-folder5="textures/items"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=5 data-url1="/mcpack/aesthetic/uniq_dyes/textures/items/dye_powder_gray.png" data-folder1="textures/items"  data-url2="/mcpack/aesthetic/uniq_dyes/textures/items/dye_powder_lime.png" data-folder2="textures/items" data-url3="/mcpack/aesthetic/uniq_dyes/textures/items/dye_powder_magenta.png" data-folder3="textures/items" data-url4="/mcpack/aesthetic/uniq_dyes/textures/items/dye_powder_pink.png" data-folder4="textures/items" data-url5="/mcpack/aesthetic/uniq_dyes/textures/items/dye_powder_purple.png" data-folder5="textures/items"/>
                Unique Dyes
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=6 data-url1="/mcpack/cla_neth_arm/textures/items/netherite_boots.png" data-folder1="textures/items" data-url2="/mcpack/cla_neth_arm/textures/items/netherite_chestplate.png" data-folder2="textures/items" data-url3="/mcpack/cla_neth_arm/textures/items/netherite_helmet.png" data-folder3="textures/items" data-url4="/mcpack/cla_neth_arm/textures/items/netherite_leggings.png" data-folder4="textures/items" data-url5="/mcpack/cla_neth_arm/textures/models/armor/netherite_1.png" data-folder5="textures/models/armor" data-url6="/mcpack/cla_neth_arm/textures/models/armor/netherite_2.png" data-folder6="textures/models/armor"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=6 data-url1="/mcpack/aesthetic/cla_neth_arm/textures/items/netherite_boots.png" data-folder1="textures/items" data-url2="/mcpack/aesthetic/cla_neth_arm/textures/items/netherite_chestplate.png" data-folder2="textures/items" data-url3="/mcpack/aesthetic/cla_neth_arm/textures/items/netherite_helmet.png" data-folder3="textures/items" data-url4="/mcpack/aesthetic/cla_neth_arm/textures/items/netherite_leggings.png" data-folder4="textures/items" data-url5="/mcpack/aesthetic/cla_neth_arm/textures/models/armor/netherite_1.png" data-folder5="textures/models/armor" data-url6="/mcpack/aesthetic/cla_neth_arm/textures/models/armor/netherite_2.png" data-folder6="textures/models/armor"/>
                 Classic Netherite Armor
             </label>
-                                            </li>
-                                            <h4>Terrain</h4>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=1 data-url1="/mcpack/bet_bed/textures/blocks/bedrock.png" data-folder1="textures/blocks"/>
+                                        </li>
+                                        <h3>Terrain</h3>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=1 data-url1="/mcpack/terrain/bet_bed/textures/blocks/bedrock.png" data-folder1="textures/blocks"/>
                Better Bedrock
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" id="brig_neth" data-amount=11 data-url1="/mcpack/brig_neth/textures/blocks/chiseled_nether_bricks.png" data-folder1="textures/blocks" data-url2="/mcpack/brig_neth/textures/blocks/cracked_nether_bricks.png" data-folder2="textures/blocks" data-url3="/mcpack/brig_neth/textures/blocks/crimson_nylium_side.png" data-folder3="textures/blocks" data-url4="/mcpack/brig_neth/textures/blocks/crimson_nylium_top.png" data-folder4="textures/blocks" data-url5="/mcpack/brig_neth/textures/blocks/nether_brick.png" data-folder5="textures/blocks" data-url6="/mcpack/brig_neth/textures/blocks/nether_gold_ore.png" data-folder6="textures/blocks" data-url7="/mcpack/brig_neth/textures/blocks/netherrack.png" data-folder7="textures/blocks" data-url8="/mcpack/brig_neth/textures/blocks/quartz_ore.png" data-folder8="textures/blocks" data-url9="/mcpack/brig_neth/textures/blocks/soul_sand.png" data-folder9="textures/blocks" data-url10="/mcpack/brig_neth/textures/blocks/soul_sand.png" data-folder10="textures/blocks" data-url11="/mcpack/brig_neth/textures/blocks/warped_nylium_side.png" data-folder11="textures/blocks"/>
-               Brighter Nether <span class="brig_nethWarning hide warningColoryellow">WARNING: Will not work with Black Nether Bricks</span>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="brig_neth" data-amount=11 data-url1="/mcpack/terrain/brig_neth/textures/blocks/chiseled_nether_bricks.png" data-folder1="textures/blocks" data-url2="/mcpack/terrain/brig_neth/textures/blocks/cracked_nether_bricks.png" data-folder2="textures/blocks" data-url3="/mcpack/terrain/brig_neth/textures/blocks/crimson_nylium_side.png" data-folder3="textures/blocks" data-url4="/mcpack/terrain/brig_neth/textures/blocks/crimson_nylium_top.png" data-folder4="textures/blocks" data-url5="/mcpack/terrain/brig_neth/textures/blocks/nether_brick.png" data-folder5="textures/blocks" data-url6="/mcpack/terrain/brig_neth/textures/blocks/nether_gold_ore.png" data-folder6="textures/blocks" data-url7="/mcpack/terrain/brig_neth/textures/blocks/netherrack.png" data-folder7="textures/blocks" data-url8="/mcpack/terrain/brig_neth/textures/blocks/quartz_ore.png" data-folder8="textures/blocks" data-url9="/mcpack/terrain/brig_neth/textures/blocks/soul_sand.png" data-folder9="textures/blocks" data-url10="/mcpack/terrain/brig_neth/textures/blocks/soul_sand.png" data-folder10="textures/blocks" data-url11="/mcpack/terrain/brig_neth/textures/blocks/warped_nylium_side.png" data-folder11="textures/blocks"/>
+               Brighter Nether <span class="brig_nethWarning hide warningColoryellow">WARNING: Will not work with Black Nether Bricks, Crimson Nylium Sides, Lower Crimson Nylium, Warped Nylium Sides, or Lower Warped Nylium</span>
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=2 data-url1="/mcpack/circ_sm/textures/environment/moon_phases.png" data-folder1="textures/environment" data-url2="/mcpack/circ_sm/textures/environment/sun.png" data-folder2="textures/environment"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=2 data-url1="/mcpack/terrain/circ_sm/textures/environment/moon_phases.png" data-folder1="textures/environment" data-url2="/mcpack/terrain/circ_sm/textures/environment/sun.png" data-folder2="textures/environment"/>
                 Circular Sun and Moon
             </label>
-                                            </li>
-                                            <h4>Unobtrusive</h4>
-                                            <li>
-                                                <label>
-                <input type="checkbox" id="unobrain" data-amount=2 data-url1="/mcpack/unob_rain/textures/environment/weather.png" data-folder1="textures/environment" data-url2="/mcpack/unob_rain/textures/particle/particles.png" data-folder2="textures/particle"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=1 data-url1="/mcpack/terrain/clear_water/biomes_client.json"/>
+               Clearer Water
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=1 data-url1="/mcpack/terrain/smo_oak/textures/blocks/log_oak.png" data-folder1="textures/blocks"/>
+               Smoother Oak Log
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=3 data-url1="/mcpack/terrain/smoo_stone/textures/blocks/stone_diorite.png" data-folder1="textures/blocks" data-url2="/mcpack/terrain/smoo_stone/textures/blocks/stone_granite_smooth.png" data-folder2="textures/blocks" data-url3="/mcpack/terrain/smoo_stone/textures/blocks/stone_granite.png" data-folder3="textures/blocks"/>
+                Smoother Stones
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=1 data-url1="/mcpack/terrain/no_peb_cdirt/textures/blocks/coarse_dirt.png" data-folder1="textures/blocks"/>
+               Pebble-less Coarse Dirt
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="no_peb_dirt" data-amount=8 data-url1="/mcpack/terrain/no_peb_dirt/textures/blocks/dirt_podzol_side.png" data-folder1="textures/blocks" data-url2="/mcpack/terrain/no_peb_dirt/textures/blocks/dirt.png" data-folder2="textures/blocks" data-url3="/mcpack/terrain/no_peb_dirt/textures/blocks/grass_path_side.png" data-folder3="textures/blocks" data-url4="/mcpack/terrain/no_peb_dirt/textures/blocks/grass_side_carried.png" data-folder4="textures/blocks" data-url5="/mcpack/terrain/no_peb_dirt/textures/blocks/grass_side_snowed.png" data-folder5="textures/blocks" data-url6="/mcpack/terrain/no_peb_dirt/textures/blocks/grass_side_snowed.tga" data-folder6="textures/blocks" data-url7="/mcpack/terrain/no_peb_dirt/textures/blocks/grass_side.tga" data-folder7="textures/blocks" data-url8="/mcpack/terrain/no_peb_dirt/textures/blocks/mycelium_side.png" data-folder8="textures/blocks"/>
+                Pebble-less Dirt <span class="no_peb_dirtWarning hide warningColoryellow">WARNING: Will not work with Mycelium Sides, Lower Mycelium, Path Sides, Lower Paths, Podzol Sides, Lower Podzol, Snow Sides, or Lower Snow</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="OreBorders" data-amount=12 data-url1="/mcpack/terrain/ore_bord/textures/blocks/ancient_debris_side.png" data-folder1="textures/blocks" data-url2="/mcpack/terrain/ore_bord/textures/blocks/ancient_debris_top.png" data-folder2="textures/blocks" data-url3="/mcpack/terrain/ore_bord/textures/blocks/coal_ore.png" data-folder3="textures/blocks" data-url4="/mcpack/terrain/ore_bord/textures/blocks/diamond_ore.png" data-folder4="textures/blocks" data-url5="/mcpack/terrain/ore_bord/textures/blocks/emerald_ore.png" data-folder5="textures/blocks" data-url6="/mcpack/terrain/ore_bord/textures/blocks/gilded_blackstone.png" data-folder6="textures/blocks" data-url7="/mcpack/terrain/ore_bord/textures/blocks/gold_ore.png" data-folder7="textures/blocks" data-url8="/mcpack/terrain/ore_bord/textures/blocks/iron_ore.png" data-folder8="textures/blocks" data-url9="/mcpack/terrain/ore_bord/textures/blocks/lapis_ore.png" data-folder9="textures/blocks" data-url10="/mcpack/terrain/ore_bord/textures/blocks/nether_gold_ore.png" data-folder10="textures/blocks" data-url11="/mcpack/terrain/ore_bord/textures/blocks/quartz_ore.png" data-folder11="textures/blocks" data-url12="/mcpack/terrain/ore_bord/textures/blocks/redstone_ore.png" data-folder12="textures/blocks"/>
+                Ore Borders <span class="OreBordersWarning hide warningColoryellow">WARNING: Will not work with Uniform Ores</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="UniformOres" data-amount=7 data-url1="/mcpack/terrain/uni_ores/textures/blocks/ancient_debris_side.png" data-folder1="textures/blocks" data-url2="/mcpack/terrain/uni_ores/textures/blocks/ancient_debris_top.png" data-folder2="textures/blocks" data-url3="/mcpack/terrain/uni_ores/textures/blocks/emerald_ore.png" data-folder3="textures/blocks" data-url4="/mcpack/terrain/uni_ores/textures/blocks/gilded_blackstone.png" data-folder4="textures/blocks" data-url5="/mcpack/terrain/uni_ores/textures/blocks/lapis_ore.png" data-folder5="textures/blocks" data-url6="/mcpack/terrain/uni_ores/textures/blocks/nether_gold_ore.png" data-folder6="textures/blocks" data-url7="/mcpack/terrain/uni_ores/textures/blocks/quartz_ore.png" data-folder7="textures/blocks"/>
+                Uniform Ores <span class="UniformOresWarning hide warningColoryellow">WARNING: Will not work with Ore Borders</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=2 data-url1="/mcpack/terrain/white_snow/textures/blocks/snow.png" data-folder1="textures/blocks" data-url2="/mcpack/terrain/white_snow/textures/items/snowball.png" data-folder2="textures/items"/>
+                Whiter Snow
+            </label>
+                                        </li>
+                                        <h3>Lower and Sides</h3>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="gr_sid" data-amount=1 data-url1="/mcpack/lower/gr_sid/textures/blocks/grass_side.tga" data-folder1="textures/blocks"/>
+               Grass Sides <span class="gr_sidWarning hide warningColoryellow">WARNING: Will not work with Lower Grass</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="low_grass" data-amount=2 data-url1="/mcpack/lower/low_grass/textures/blocks/grass_side_carried.png" data-folder1="textures/blocks"  data-url2="/mcpack/lower/low_grass/textures/blocks/grass_side.tga" data-folder2="textures/blocks"/>
+               Lower Grass <span class="low_grassWarning hide warningColoryellow">WARNING: Will not work with Grass Sides</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="myc_sid" data-amount=1 data-url1="/mcpack/lower/myc_sid/textures/blocks/mycelium_side.png" data-folder1="textures/blocks"/>
+               Mycelium Sides <span class="myc_sidWarning hide warningColoryellow">WARNING: Will not work with Lower Mycelium or Pebble-less Dirt</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="low_myc" data-amount=1 data-url1="/mcpack/lower/low_myc/textures/blocks/mycelium_side.png" data-folder1="textures/blocks"/>
+               Lower Mycelium <span class="low_mycWarning hide warningColoryellow">WARNING: Will not work with Mycelium Sides or Pebble-less Dirt</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="path_sid" data-amount=1 data-url1="/mcpack/lower/path_sid/textures/blocks/grass_path_side.png" data-folder1="textures/blocks"/>
+               Path Sides <span class="path_sidWarning hide warningColoryellow">WARNING: Will not work with Pebble-less Dirt or Lower Paths</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="low_path" data-amount=1 data-url1="/mcpack/lower/low_path/textures/blocks/grass_path_side.png" data-folder1="textures/blocks"/>
+               Lower Paths <span class="low_pathWarning hide warningColoryellow">WARNING: Will not work with Pebble-less Dirt or Path Sides</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="pod_side" data-amount=1 data-url1="/mcpack/lower/pod_sid/textures/blocks/dirt_podzol_side.png" data-folder1="textures/blocks"/>
+               Podzol Sides <span class="pod_sideWarning hide warningColoryellow">WARNING: Will not work with Pebble-less Dirt or Lower Podzol</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="low_pod" data-amount=1 data-url1="/mcpack/lower/low_pod/textures/blocks/dirt_podzol_side.png" data-folder1="textures/blocks"/>
+               Lower Podzol <span class="low_podWarning hide warningColoryellow">WARNING: Will not work with Pebble-less Dirt or Podzol Sides </span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="snow_sid" data-amount=2 data-url1="/mcpack/lower/snow_sid/textures/blocks/grass_side_snowed.png" data-folder1="textures/blocks"  data-url2="/mcpack/lower/snow_sid/textures/blocks/grass_side_snowed.tga" data-folder2="textures/blocks"/>
+               Snow Sides <span class="snow_sidWarning hide warningColoryellow">WARNING: Will not work with Pebble-less Dirt or Lower Snow</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="low_snow" data-amount=2 data-url1="/mcpack/lower/low_snow/textures/blocks/grass_side_snowed.png" data-folder1="textures/blocks"  data-url2="/mcpack/lower/low_snow/textures/blocks/grass_side_snowed.tga" data-folder2="textures/blocks"/>
+               Lower Snow <span class="low_snowWarning hide warningColoryellow">WARNING: Will not work with Pebble-less Dirt or Snow Sides</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="crim_sid" data-amount=1 data-url1="/mcpack/lower/crim_sid/textures/blocks/crimson_nylium_side.png" data-folder1="textures/blocks"/>
+               Crimson Nylium Sides <span class="crim_sidWarning hide warningColoryellow">WARNING: Will not work with Brighter Nether or Lower Crimson Nylium</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="low_crim" data-amount=1 data-url1="/mcpack/lower/low_crim/textures/blocks/crimson_nylium_side.png" data-folder1="textures/blocks"/>
+               Lower Crimson Nylium <span class="low_crimWarning hide warningColoryellow">WARNING: Will not work with Brighter Nether or Crimson Nylium Sides</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="warp_sid" data-amount=1 data-url1="/mcpack/lower/warp_sid/textures/blocks/warped_nylium_side.png" data-folder1="textures/blocks"/>
+               Warped Nylium Sides <span class="warp_sidWarning hide warningColoryellow">WARNING: Will not work with Brighter Nether or Lower Warped Nylium</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="low_warp" data-amount=1 data-url1="/mcpack/lower/low_warp/textures/blocks/warped_nylium_side.png" data-folder1="textures/blocks"/>
+               Lower Warped Nylium <span class="low_warpWarning hide warningColoryellow">WARNING: Will not work with Brighter Nether or Warped Nylium Sides</span>
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=1 data-url1="/mcpack/lower/short_grass/textures/blocks/tallgrass.png" data-folder1="textures/blocks"/>
+               Shorter Grass
+            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=3 data-url1="/mcpack/lower/short_tgrass/textures/blocks/double_plant_grass_bottom.png" data-folder1="textures/blocks" data-url2="/mcpack/lower/short_tgrass/textures/blocks/double_plant_grass_carried.png" data-folder2="textures/blocks" data-url3="/mcpack/lower/short_tgrass/textures/blocks/double_plant_grass_top.png" data-folder3="textures/blocks"/>
+               Shorter Tall Grass
+            </label>
+                                        </li>
+                                        <h3>Unobtrusive</h3>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="unobrain" data-amount=2 data-url1="/mcpack/unobtrusive/unob_rain/textures/environment/weather.png" data-folder1="textures/environment" data-url2="/mcpack/unobtrusive/unob_rain/textures/particle/particles.png" data-folder2="textures/particle"/>
                 Unobtrusive Rain <span class="unobrainWarning hide warningColoryellow">WARNING: Will not work with Alternate Particles</span>
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=1 data-url1="/mcpack/unob_scaff/textures/blocks/scaffolding_top.tga" data-folder1="textures/blocks"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=1 data-url1="/mcpack/unobtrusive/unob_scaff/textures/blocks/scaffolding_top.tga" data-folder1="textures/blocks"/>
                Unobtrusive Scaffolding
             </label>
-                                            </li>
-
-                                            <li>
-                                                <label>
-                <input type="checkbox" id="TransparentShields" data-amount=1 data-url1="/mcpack/trans_shield/textures/entity/shield.png" data-folder1="textures/entity"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="TransparentShields" data-amount=1 data-url1="/mcpack/unobtrusive/trans_shield/textures/entity/shield.png" data-folder1="textures/entity"/>
                 Transparent Shields <span class="TransShieldWarning hide warningColoryellow">WARNING: Will not work with Lower Shield</span>
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" id="BorderlessGlass" data-amount=2 data-url1="/mcpack/borderless_glass/textures/blocks/glass.png" data-folder1="textures/blocks" data-url2="/mcpack/borderless_glass/textures/blocks/glass_pane_top.png" data-folder2="textures/blocks"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="BorderlessGlass" data-amount=2 data-url1="/mcpack/unobtrusive/borderless_glass/textures/blocks/glass.png" data-folder1="textures/blocks" data-url2="/mcpack/unobtrusive/borderless_glass/textures/blocks/glass_pane_top.png" data-folder2="textures/blocks"/>
                 Borderless Glass <span class="BorderlessGlassWarning hide warningColoryellow">WARNING: Will not work with Clean Glass</span>
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" id="BorderlessSTGlass" data-amount=32 data-url1="/mcpack/borderless_stglass/textures/blocks/glass_black.png" data-folder1="textures/blocks" data-url2="/mcpack/borderless_stglass/textures/blocks/glass_blue.png" data-folder2="textures/blocks" data-url3="/mcpack/borderless_stglass/textures/blocks/glass_brown.png" data-folder3="textures/blocks" data-url4="/mcpack/borderless_stglass/textures/blocks/glass_cyan.png" data-folder4="textures/blocks" data-url5="/mcpack/borderless_stglass/textures/blocks/glass_gray.png" data-folder5="textures/blocks" data-url6="/mcpack/borderless_stglass/textures/blocks/glass_green.png" data-folder6="textures/blocks" data-url7="/mcpack/borderless_stglass/textures/blocks/glass_light_blue.png" data-folder7="textures/blocks" data-url8="/mcpack/borderless_stglass/textures/blocks/glass_lime.png" data-folder8="textures/blocks" data-url9="/mcpack/borderless_stglass/textures/blocks/glass_magenta.png" data-folder9="textures/blocks" data-url10="/mcpack/borderless_stglass/textures/blocks/glass_orange.png" data-folder10="textures/blocks" data-url11="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_black.png" data-folder11="textures/blocks" data-url12="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_blue.png" data-folder12="textures/blocks" data-url13="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_brown.png" data-folder13="textures/blocks" data-url14="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_cyan.png" data-folder14="textures/blocks" data-url15="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_gray.png" data-folder15="textures/blocks" data-url16="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_green.png" data-folder16="textures/blocks" data-url17="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_light_blue.png" data-folder17="textures/blocks" data-url18="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_lime.png" data-folder18="textures/blocks" data-url19="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_magenta.png" data-folder19="textures/blocks" data-url20="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_orange.png" data-folder20="textures/blocks" data-url21="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_pink.png" data-folder21="textures/blocks" data-url22="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_purple.png" data-folder22="textures/blocks" data-url23="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_red.png" data-folder23="textures/blocks" data-url24="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_silver.png" data-folder24="textures/blocks" data-url25="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_white.png" data-folder25="textures/blocks" data-url26="/mcpack/borderless_stglass/textures/blocks/glass_pane_top_yellow.png" data-folder26="textures/blocks" data-url27="/mcpack/borderless_stglass/textures/blocks/glass_pink.png" data-folder27="textures/blocks" data-url28="/mcpack/borderless_stglass/textures/blocks/glass_purple.png" data-folder28="textures/blocks" data-url29="/mcpack/borderless_stglass/textures/blocks/glass_red.png" data-folder29="textures/blocks" data-url30="/mcpack/borderless_stglass/textures/blocks/glass_silver.png" data-folder30="textures/blocks" data-url31="/mcpack/borderless_stglass/textures/blocks/glass_white.png" data-folder31="textures/blocks" data-url32="/mcpack/borderless_stglass/textures/blocks/glass_yellow.png" data-folder32="textures/blocks"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="BorderlessSTGlass" data-amount=32 data-url1="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_black.png" data-folder1="textures/blocks" data-url2="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_blue.png" data-folder2="textures/blocks" data-url3="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_brown.png" data-folder3="textures/blocks" data-url4="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_cyan.png" data-folder4="textures/blocks" data-url5="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_gray.png" data-folder5="textures/blocks" data-url6="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_green.png" data-folder6="textures/blocks" data-url7="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_light_blue.png" data-folder7="textures/blocks" data-url8="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_lime.png" data-folder8="textures/blocks" data-url9="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_magenta.png" data-folder9="textures/blocks" data-url10="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_orange.png" data-folder10="textures/blocks" data-url11="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_black.png" data-folder11="textures/blocks" data-url12="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_blue.png" data-folder12="textures/blocks" data-url13="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_brown.png" data-folder13="textures/blocks" data-url14="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_cyan.png" data-folder14="textures/blocks" data-url15="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_gray.png" data-folder15="textures/blocks" data-url16="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_green.png" data-folder16="textures/blocks" data-url17="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_light_blue.png" data-folder17="textures/blocks" data-url18="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_lime.png" data-folder18="textures/blocks" data-url19="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_magenta.png" data-folder19="textures/blocks" data-url20="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_orange.png" data-folder20="textures/blocks" data-url21="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_pink.png" data-folder21="textures/blocks" data-url22="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_purple.png" data-folder22="textures/blocks" data-url23="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_red.png" data-folder23="textures/blocks" data-url24="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_silver.png" data-folder24="textures/blocks" data-url25="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_white.png" data-folder25="textures/blocks" data-url26="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pane_top_yellow.png" data-folder26="textures/blocks" data-url27="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_pink.png" data-folder27="textures/blocks" data-url28="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_purple.png" data-folder28="textures/blocks" data-url29="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_red.png" data-folder29="textures/blocks" data-url30="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_silver.png" data-folder30="textures/blocks" data-url31="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_white.png" data-folder31="textures/blocks" data-url32="/mcpack/unobtrusive/borderless_stglass/textures/blocks/glass_yellow.png" data-folder32="textures/blocks"/>
                 Borderless Stained Glass <span class="BorderlessSTGlassWarning hide warningColoryellow">WARNING: Will not work with Clean Stained Glass</span>
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" id="CleanGlass" data-amount=1 data-url1="/mcpack/clean_glass/textures/blocks/glass.png" data-folder1="textures/blocks"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="CleanGlass" data-amount=1 data-url1="/mcpack/unobtrusive/clean_glass/textures/blocks/glass.png" data-folder1="textures/blocks"/>
                Clean Glass <span class="CleanGlassWarning hide warningColoryellow">WARNING: Will not work with Borderless Glass</span>
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" id="CleanSTGlass" data-amount=16 data-url1="/mcpack/clean_stglass/textures/blocks/glass_black.png" data-folder1="textures/blocks" data-url2="/mcpack/clean_stglass/textures/blocks/glass_blue.png" data-folder2="textures/blocks" data-url3="/mcpack/clean_stglass/textures/blocks/glass_brown.png" data-folder3="textures/blocks" data-url4="/mcpack/clean_stglass/textures/blocks/glass_cyan.png" data-folder4="textures/blocks" data-url5="/mcpack/clean_stglass/textures/blocks/glass_gray.png" data-folder5="textures/blocks" data-url6="/mcpack/clean_stglass/textures/blocks/glass_green.png" data-folder6="textures/blocks" data-url7="/mcpack/clean_stglass/textures/blocks/glass_light_blue.png" data-folder7="textures/blocks" data-url8="/mcpack/clean_stglass/textures/blocks/glass_lime.png" data-folder8="textures/blocks" data-url9="/mcpack/clean_stglass/textures/blocks/glass_magenta.png" data-folder9="textures/blocks" data-url10="/mcpack/clean_stglass/textures/blocks/glass_orange.png" data-folder10="textures/blocks" data-url11="/mcpack/clean_stglass/textures/blocks/glass_pink.png" data-folder11="textures/blocks" data-url12="/mcpack/clean_stglass/textures/blocks/glass_purple.png" data-folder12="textures/blocks" data-url13="/mcpack/clean_stglass/textures/blocks/glass_red.png" data-folder13="textures/blocks" data-url14="/mcpack/clean_stglass/textures/blocks/glass_silver.png" data-folder14="textures/blocks" data-url15="/mcpack/clean_stglass/textures/blocks/glass_white.png" data-folder15="textures/blocks" data-url16="/mcpack/clean_stglass/textures/blocks/glass_yellow.png" data-folder16="textures/blocks"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="CleanSTGlass" data-amount=16 data-url1="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_black.png" data-folder1="textures/blocks" data-url2="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_blue.png" data-folder2="textures/blocks" data-url3="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_brown.png" data-folder3="textures/blocks" data-url4="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_cyan.png" data-folder4="textures/blocks" data-url5="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_gray.png" data-folder5="textures/blocks" data-url6="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_green.png" data-folder6="textures/blocks" data-url7="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_light_blue.png" data-folder7="textures/blocks" data-url8="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_lime.png" data-folder8="textures/blocks" data-url9="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_magenta.png" data-folder9="textures/blocks" data-url10="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_orange.png" data-folder10="textures/blocks" data-url11="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_pink.png" data-folder11="textures/blocks" data-url12="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_purple.png" data-folder12="textures/blocks" data-url13="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_red.png" data-folder13="textures/blocks" data-url14="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_silver.png" data-folder14="textures/blocks" data-url15="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_white.png" data-folder15="textures/blocks" data-url16="/mcpack/unobtrusive/clean_stglass/textures/blocks/glass_yellow.png" data-folder16="textures/blocks"/>
                 Clean Stained Glass <span class="CleanSTGlassWarning hide warningColoryellow">WARNING: Will not work with Borderless Stained Glass</span>
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=2 data-url1="/mcpack/lowerfire/textures/blocks/fire_0.png" data-folder1="textures/blocks"  data-url2="/mcpack/lowerfire/textures/blocks/fire_1.png" data-folder2="textures/blocks"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=2 data-url1="/mcpack/unobtrusive/lowerfire/textures/blocks/fire_0.png" data-folder1="textures/blocks"  data-url2="/mcpack/unobtrusive/lowerfire/textures/blocks/fire_1.png" data-folder2="textures/blocks"/>
                Lower Fire
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" id="LowerShield" data-amount=2 data-url1="/mcpack/lowerShield/textures/entity/shield.png" data-folder1="textures/entity"  data-url2="/mcpack/lowerShield/models/entity/shield.geo.json" data-folder2="models/entity"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="LowerShield" data-amount=2 data-url1="/mcpack/unobtrusive/lowerShield/textures/entity/shield.png" data-folder1="textures/entity"  data-url2="/mcpack/unobtrusive/lowerShield/models/entity/shield.geo.json" data-folder2="models/entity"/>
                Lower Shield <span class="LowShieldWarning hide warningColoryellow">WARNING: Will not work with Transparent Shields</span>
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" id="transPump" data-amount=1 data-url1="/mcpack/trans_pump/textures/misc/pumpkinblur.png" data-folder1="textures/misc"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="transPump" data-amount=1 data-url1="/mcpack/unobtrusive/trans_pump/textures/misc/pumpkinblur.png" data-folder1="textures/misc"/>
                Transparent Pumpkin <span class="transPumpWarning hide warningColoryellow">WARNING: Will not work with No Pumpkin Overlay</span>
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=1 data-url1="/mcpack/nobeacbeam/textures/entity/beacon_beam.png" data-folder1="textures/entity"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=1 data-url1="/mcpack/unobtrusive/nobeacbeam/textures/entity/beacon_beam.png" data-folder1="textures/entity"/>
                No Beacon Beam
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=7 data-url1="/mcpack/clean_ice/textures/blocks/blue_ice.png" data-folder1="textures/blocks"  data-url2="/mcpack/clean_ice/textures/blocks/frosted_ice_0.png" data-folder2="textures/blocks" data-url3="/mcpack/clean_ice/textures/blocks/frosted_ice_1.png" data-folder3="textures/blocks" data-url4="/mcpack/clean_ice/textures/blocks/frosted_ice_2.png" data-folder4="textures/blocks" data-url5="/mcpack/clean_ice/textures/blocks/frosted_ice_3.png" data-folder5="textures/blocks" data-url6="/mcpack/clean_ice/textures/blocks/ice_packed.png" data-folder6="textures/blocks" data-url7="/mcpack/clean_ice/textures/blocks/ice.png" data-folder7="textures/blocks"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=7 data-url1="/mcpack/unobtrusive/clean_ice/textures/blocks/blue_ice.png" data-folder1="textures/blocks"  data-url2="/mcpack/unobtrusive/clean_ice/textures/blocks/frosted_ice_0.png" data-folder2="textures/blocks" data-url3="/mcpack/unobtrusive/clean_ice/textures/blocks/frosted_ice_1.png" data-folder3="textures/blocks" data-url4="/mcpack/unobtrusive/clean_ice/textures/blocks/frosted_ice_2.png" data-folder4="textures/blocks" data-url5="/mcpack/unobtrusive/clean_ice/textures/blocks/frosted_ice_3.png" data-folder5="textures/blocks" data-url6="/mcpack/unobtrusive/clean_ice/textures/blocks/ice_packed.png" data-folder6="textures/blocks" data-url7="/mcpack/unobtrusive/clean_ice/textures/blocks/ice.png" data-folder7="textures/blocks"/>
                Clean Ice
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=1 data-url1="/mcpack/alt_ench_glint/textures/misc/enchanted_item_glint.png" data-folder1="textures/misc"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=1 data-url1="/mcpack/unobtrusive/alt_ench_glint/textures/misc/enchanted_item_glint.png" data-folder1="textures/misc"/>
                 Alternate Enchant Glint
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" id="NoPump" data-amount=1 data-url1="/mcpack/no_pump_over/textures/misc/pumpkinblur.png" data-folder1="textures/misc"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" id="NoPump" data-amount=1 data-url1="/mcpack/unobtrusive/no_pump_over/textures/misc/pumpkinblur.png" data-folder1="textures/misc"/>
                No Pumpkin Overlay <span class="NoPumpWarning hide warningColoryellow">WARNING: Will not work with Transparent Pumpkin</span>
             </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                <input type="checkbox" data-amount=1 data-url1="/mcpack/NoVignette/ui/hud_screen.json" data-folder1="ui"/>
+                                        </li>
+                                        <li>
+                                            <label>
+                <input type="checkbox" data-amount=1 data-url1="/mcpack/unobtrusive/NoVignette/ui/hud_screen.json" data-folder1="ui"/>
                No Vignette
             </label>
-                                            </li>
-                                        </ul>
+                                        </li>
+                                    </ul>
 
-                                        <button type="submit" class="btn btn-primary">Download ZIP</button>
-                                    </form>
+                                    <button type="submit" class="btn btn-primary">Download ZIP</button>
+                                    <br><br>
+                                    <p>MCPACK coming soon</p>
+                                </form>
 
-                                    <br>
+                                <br>
 
-                                    <div class="progress hide" id="progress_bar">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                                        </div>
+                                <div class="progress hide" id="progress_bar">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
                                     </div>
+                                </div>
 
-                                    <br>
+                                <br>
 
-                                    <p class="hide" id="result"></p>
+                                <p class="hide" id="result"></p>
 
 
 
@@ -414,7 +582,7 @@ $$ |      $$ |\\$$$$$$  |\\$$$$$$$ |\\$$$$$$  |\\$$$$$$$\\ \\$$$$$$$\\ $$ |
                                         "format_version": 2,
                                         "header": {
                                             "description": "generated by PiSaucer",
-                                            "name": "Vanilla Tweaks in Minecraft Bedrock!",
+                                            "name": "Vanilla Tweaks Bedrock",
                                             "uuid": uuid1,
                                             "version": [0, 0, 1],
                                             "min_engine_version": [1, 14, 0]
@@ -461,9 +629,10 @@ $$ |      $$ |\\$$$$$$  |\\$$$$$$$ |\\$$$$$$  |\\$$$$$$$\\ \\$$$$$$$\\ $$ |
 
                                         console.log("Filename: tweaks_" + packID);
                                         //make sure to edit this to .mcpack (it works)
+                                        //hopefully a if then statment for .mcpack or .zip would work 
                                         saveAs(blob, "tweaks_" + packID + ".zip");
 
-                                        showMessage("Thank You for downloading 😊");
+                                        showMessage("Thank you for downloading 😊");
                                     }, function(e) {
                                         showError(e);
                                     });
@@ -551,6 +720,12 @@ $$ |      $$ |\\$$$$$$  |\\$$$$$$$ |\\$$$$$$  |\\$$$$$$$\\ \\$$$$$$$\\ $$ |
         
 -->
         <script type="text/javascript" src="js/compatibilityCheck.js"></script>
+
+        <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
 
 </body>
 

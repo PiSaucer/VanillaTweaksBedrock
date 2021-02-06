@@ -43,7 +43,11 @@ http-server
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/PiSaucer/VanillaTweaksBedrock/issues). 
+Contributions, issues and feature requests are welcome!
+
+Feel free to check [issues page](https://github.com/PiSaucer/VanillaTweaksBedrock/issues). 
+
+I am needing help with css to make it look better.
 
 ## Show your support
 

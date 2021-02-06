@@ -52,7 +52,74 @@ document.getElementById('select-all').onchange = function() {
     var warn12 = document.getElementsByClassName('brig_nethWarning')[0];
     if (this.checked) warn12.classList.remove('hide');
     else warn12.classList.add('hide');
-
+    //OreBorders
+    var warn13 = document.getElementsByClassName('OreBordersWarning')[0];
+    if (this.checked) warn13.classList.remove('hide');
+    else warn13.classList.add('hide');
+    //UniformOres
+    var warn14 = document.getElementsByClassName('UniformOresWarning')[0];
+    if (this.checked) warn14.classList.remove('hide');
+    else warn14.classList.add('hide');
+    //gr_sid
+    var warn15 = document.getElementsByClassName('gr_sidWarning')[0];
+    if (this.checked) warn15.classList.remove('hide');
+    else warn15.classList.add('hide');
+    //low_grass
+    var warn16 = document.getElementsByClassName('low_grassWarning')[0];
+    if (this.checked) warn16.classList.remove('hide');
+    else warn16.classList.add('hide');
+    //myc_sid
+    var warn17 = document.getElementsByClassName('myc_sidWarning')[0];
+    if (this.checked) warn17.classList.remove('hide');
+    else warn17.classList.add('hide');
+    //low_myc
+    var warn18 = document.getElementsByClassName('low_mycWarning')[0];
+    if (this.checked) warn18.classList.remove('hide');
+    else warn18.classList.add('hide');
+    //no_peb_dirt
+    var warn19 = document.getElementsByClassName('no_peb_dirtWarning')[0];
+    if (this.checked) warn19.classList.remove('hide');
+    else warn19.classList.add('hide');
+    //path_sid
+    var warn20 = document.getElementsByClassName('path_sidWarning')[0];
+    if (this.checked) warn20.classList.remove('hide');
+    else warn20.classList.add('hide');
+    //low_path
+    var warn21 = document.getElementsByClassName('low_pathWarning')[0];
+    if (this.checked) warn21.classList.remove('hide');
+    else warn21.classList.add('hide');
+    //pod_side
+    var warn22 = document.getElementsByClassName('pod_sideWarning')[0];
+    if (this.checked) warn22.classList.remove('hide');
+    else warn22.classList.add('hide');
+    //low_pod
+    var warn23 = document.getElementsByClassName('low_podWarning')[0];
+    if (this.checked) warn23.classList.remove('hide');
+    else warn23.classList.add('hide');
+    //snow_sid
+    var warn24 = document.getElementsByClassName('snow_sidWarning')[0];
+    if (this.checked) warn24.classList.remove('hide');
+    else warn24.classList.add('hide');
+    //low_snow
+    var warn25 = document.getElementsByClassName('low_snowWarning')[0];
+    if (this.checked) warn25.classList.remove('hide');
+    else warn25.classList.add('hide');
+    //crim_sid
+    var warn26 = document.getElementsByClassName('crim_sidWarning')[0];
+    if (this.checked) warn26.classList.remove('hide');
+    else warn26.classList.add('hide');
+    //low_crim
+    var warn27 = document.getElementsByClassName('low_crimWarning')[0];
+    if (this.checked) warn27.classList.remove('hide');
+    else warn27.classList.add('hide');
+    //warp_sid
+    var warn28 = document.getElementsByClassName('warp_sidWarning')[0];
+    if (this.checked) warn28.classList.remove('hide');
+    else warn28.classList.add('hide');
+    //low_warp
+    var warn29 = document.getElementsByClassName('low_warpWarning')[0];
+    if (this.checked) warn29.classList.remove('hide');
+    else warn29.classList.add('hide');
 }
 
 
@@ -136,6 +203,125 @@ document.getElementById('BlackNetherBricks').onchange = function() {
 //brig_neth
 document.getElementById('brig_neth').onchange = function() {
     var warn = document.getElementsByClassName('brig_nethWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//OreBorders
+document.getElementById('OreBorders').onchange = function() {
+    var warn = document.getElementsByClassName('OreBordersWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//UniformOres
+document.getElementById('UniformOres').onchange = function() {
+    var warn = document.getElementsByClassName('UniformOresWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//gr_sid
+document.getElementById('gr_sid').onchange = function() {
+    var warn = document.getElementsByClassName('gr_sidWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//low_grass
+document.getElementById('low_grass').onchange = function() {
+    var warn = document.getElementsByClassName('low_grassWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//myc_sid
+document.getElementById('myc_sid').onchange = function() {
+    var warn = document.getElementsByClassName('myc_sidWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//low_myc
+document.getElementById('low_myc').onchange = function() {
+    var warn = document.getElementsByClassName('low_mycWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//no_peb_dirt
+document.getElementById('no_peb_dirt').onchange = function() {
+    var warn = document.getElementsByClassName('no_peb_dirtWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//path_sid
+document.getElementById('path_sid').onchange = function() {
+    var warn = document.getElementsByClassName('path_sidWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//low_path
+document.getElementById('low_path').onchange = function() {
+    var warn = document.getElementsByClassName('low_pathWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//pod_side
+document.getElementById('pod_side').onchange = function() {
+    var warn = document.getElementsByClassName('pod_sideWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//low_pod
+document.getElementById('low_pod').onchange = function() {
+    var warn = document.getElementsByClassName('low_podWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//snow_sid
+document.getElementById('snow_sid').onchange = function() {
+    var warn = document.getElementsByClassName('snow_sidWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//low_snow
+document.getElementById('low_snow').onchange = function() {
+    var warn = document.getElementsByClassName('low_snowWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//crim_sid
+document.getElementById('crim_sid').onchange = function() {
+    var warn = document.getElementsByClassName('crim_sidWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//low_crim
+document.getElementById('low_crim').onchange = function() {
+    var warn = document.getElementsByClassName('low_crimWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//warp_sid
+document.getElementById('warp_sid').onchange = function() {
+    var warn = document.getElementsByClassName('warp_sidWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//low_warp
+document.getElementById('low_warp').onchange = function() {
+    var warn = document.getElementsByClassName('low_warpWarning')[0];
     if (this.checked) warn.classList.remove('hide');
     else warn.classList.add('hide');
 }

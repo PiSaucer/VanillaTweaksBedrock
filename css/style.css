@@ -19,8 +19,30 @@
     margin-top: 10px;
 }
 
-.github-corner:hover .octo-arm {
-    animation: octocat-wave 560ms ease-in-out
+.outer-logo {
+    position: relative;
+    display: inline-block;
+    display: inline-block;
+}
+
+.outer-logo>img {
+    vertical-align: middle;
+}
+
+.outer-logo::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 89%;
+    height: 92%;
+    background: #000;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.outer-logo:hover::before {
+    opacity: 0.50;
 }
 
 @media only screen and (max-width: 600px) {
@@ -29,5 +51,11 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    .outer-logo::before {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 90%;
     }
 }

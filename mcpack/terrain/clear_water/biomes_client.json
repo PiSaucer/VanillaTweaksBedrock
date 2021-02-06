@@ -1,0 +1,15 @@
+/*
+ - Default is the settings that a biome will use if it is not specified.
+ - All fields in a biome are optional default values will overwrite the missing ones.
+ - If the default is overwritten in a resource pack then it will overwrite all biomes unless the resource pack defines the biomes.
+  */
+{
+  "biomes": {
+    "default": {
+      "water_surface_color": "#44AFF5",
+      "water_surface_transparency": 0.4,
+      "water_fog_color": "#44AFF5",
+      "water_fog_distance": 32
+    }
+  }
+}
