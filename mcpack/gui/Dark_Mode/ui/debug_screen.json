@@ -1,0 +1,13 @@
+{
+  "namespace": "debug_screen",
+
+  "special_render": {
+    "type": "label",
+    "text": ""
+  },
+  "content_panel": {
+    "type": "panel"
+  }
+}
+
+// Edited by Offroaders123 for the Dark Mode resource pack for Minecraft Bedrock Edition.

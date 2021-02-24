@@ -8,6 +8,7 @@
 - lithium-lx - behavior packs
 - KaanGaming
 - amybluesky - Lower Shield - [curseforge](https://www.curseforge.com/minecraft/mc-addons/lower-shield-by-amybluesky/files) 
+- Offroaders123 - Dark Mode - [GitHub](https://github.com/Offroaders123/Dark-Mode)
 
 ## [Vanilla Tweaks Team](https://vanillatweaks.net/)
 - André Paulo - Web development
@@ -29,5 +30,6 @@ Vanilla Tweaks: https://vanillatweaks.net/
 - [FileSaver Team](https://github.com/eligrey/FileSaver.js/)
 - [jQuery Team](https://jquery.com/)
 - [Bootstrap Team](https://getbootstrap.com/)
+- [SortableJS Team](https://github.com/SortableJS/Sortable)
 
 ## Other Thanks

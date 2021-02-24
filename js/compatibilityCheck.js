@@ -120,6 +120,22 @@ document.getElementById('select-all').onchange = function() {
     var warn29 = document.getElementsByClassName('low_warpWarning')[0];
     if (this.checked) warn29.classList.remove('hide');
     else warn29.classList.add('hide');
+    //nobeacbeam
+    var warn30 = document.getElementsByClassName('nobeacbeamWarning')[0];
+    if (this.checked) warn30.classList.remove('hide');
+    else warn30.classList.add('hide');
+    //bacon_beam
+    var warn31 = document.getElementsByClassName('bacon_beamWarning')[0];
+    if (this.checked) warn31.classList.remove('hide');
+    else warn31.classList.add('hide');
+    //sticky_sides
+    var warn32 = document.getElementsByClassName('sticky_sidesWarning')[0];
+    if (this.checked) warn32.classList.remove('hide');
+    else warn32.classList.add('hide');
+    //honey_slime
+    var warn33 = document.getElementsByClassName('honey_slimeWarning')[0];
+    if (this.checked) warn33.classList.remove('hide');
+    else warn33.classList.add('hide');
 }
 
 
@@ -322,6 +338,34 @@ document.getElementById('warp_sid').onchange = function() {
 //low_warp
 document.getElementById('low_warp').onchange = function() {
     var warn = document.getElementsByClassName('low_warpWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//nobeacbeam
+document.getElementById('nobeacbeam').onchange = function() {
+    var warn = document.getElementsByClassName('nobeacbeamWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//bacon_beam
+document.getElementById('bacon_beam').onchange = function() {
+    var warn = document.getElementsByClassName('bacon_beamWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//sticky_sides
+document.getElementById('sticky_sides').onchange = function() {
+    var warn = document.getElementsByClassName('sticky_sidesWarning')[0];
+    if (this.checked) warn.classList.remove('hide');
+    else warn.classList.add('hide');
+}
+
+//honey_slime
+document.getElementById('honey_slime').onchange = function() {
+    var warn = document.getElementsByClassName('honey_slimeWarning')[0];
     if (this.checked) warn.classList.remove('hide');
     else warn.classList.add('hide');
 }
