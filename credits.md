@@ -26,8 +26,9 @@ Vanilla Tweaks: https://vanillatweaks.net/
 ```
 
 ## Web Libraries used
-- [JSZip Team](https://stuk.github.io/jszip/)
-- [FileSaver Team](https://github.com/eligrey/FileSaver.js/)
-- [jQuery Team](https://jquery.com/)
-- [Bootstrap Team](https://getbootstrap.com/)
-- [SortableJS Team](https://github.com/SortableJS/Sortable)
+- modified version of [modularDownload.js](https://github.com/PiSaucer/modularDownload.js)
+  - [JSZip Team](https://stuk.github.io/jszip/)
+  - [FileSaver Team](https://github.com/eligrey/FileSaver.js/)
+  - [jQuery Team](https://jquery.com/)
+  - [Bootstrap Team](https://getbootstrap.com/)
+  - [SortableJS Team](https://github.com/SortableJS/Sortable)
