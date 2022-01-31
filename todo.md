@@ -1,6 +1,8 @@
-# to do
-- make the menu colaspable
-- dark mode?
-- mit linses html
-- always follow the [current.md](current.md) to know what to continuely working on
-- update the credits.txt in the download when done with the project
+# To Do
+- [ ] Dark mode?
+  - [ ] Make full dir and file
+- [ ] Make site look better
+  - [x] make the menu colaspable
+  - [ ] Add images for each module
+- [ ] Improved README.md
+- [ ] Add to mcpedl
