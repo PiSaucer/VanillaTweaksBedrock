@@ -4,5 +4,6 @@
 - [ ] Make site look better
   - [x] make the menu colaspable
   - [ ] Add images for each module
+  - [ ] Dark Mode Switch (default dark)
 - [ ] Improved README.md
 - [ ] Add to mcpedl
