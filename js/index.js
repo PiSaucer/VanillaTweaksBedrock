@@ -100,7 +100,7 @@ jQuery(function($) {
             var manifestInfoOBJ = {
                 "format_version": 2,
                 "header": {
-                    "description": "§evanillatweaksbedrock.web.app",
+                    "description": "§evanillatweakbedrock.ml",
                     "name": "§6Vanilla Tweaks Bedrock",
                     "uuid": uuid1,
                     "version": [0, 0, 1],
