@@ -7,3 +7,4 @@
   - [ ] Dark Mode Switch (default dark)
 - [ ] Improved README.md
 - [ ] Add to mcpedl
+- [ ] Add More Packs from the website
