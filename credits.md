@@ -7,8 +7,9 @@
 - [KaanGaming](https://github.com/KaanGaming) - repo owner
 - [alt03b1](https://github.com/alt03b1) - resource packs
 - [lithium-lx](https://github.com/lithium-lx) - behavior packs
-- amybluesky - Lower Shield - [curseforge](https://www.curseforge.com/minecraft/mc-addons/lower-shield-by-amybluesky/files) 
-- Offroaders123 - Dark Mode - [GitHub](https://github.com/Offroaders123/Dark-Mode)
+- [amybluesky](https://www.curseforge.com/minecraft/mc-addons/lower-shield-by-amybluesky/files) - Lower Shield
+- [Offroaders123](https://github.com/Offroaders123/Dark-Mode) - Dark Mode
+- [MMStinks](https://twitter.com/MMStinks) - Unique Dyes
 
 ## [Vanilla Tweaks Team](https://vanillatweaks.net/)
 - André Paulo - Web development
