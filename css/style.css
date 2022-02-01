@@ -78,3 +78,8 @@ h3 a:hover {
         height: 76%;
     }
 }
+
+.moduleIcon {
+    margin-left: 5px;
+    width: 50px;
+}
