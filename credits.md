@@ -26,6 +26,9 @@ Credits:
 Vanilla Tweaks: https://vanillatweaks.net/
 ```
 
+## Other Thanks
+* [minus1over1](https://github.com/minus1over12) - Original Creator of [OpenDyslexicMC](https://github.com/minus1over12/OpenDyslexicMC) for Java
+
 ## Web Libraries used
 - modified version of [modularDownload.js](https://github.com/PiSaucer/modularDownload.js)
   - [JSZip Team](https://stuk.github.io/jszip/)
