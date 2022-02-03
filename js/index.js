@@ -52,120 +52,121 @@ jQuery(function($) {
     $(".btn").on('click', function(e) {
 
         let fileType = $(this).attr("value");
-        resetMessage();
-        var zip = new JSZip();
-        var packNameArray = [];
-        var packNamesString;
+        var $form = $("#download_form").click("submit", function(e) {
+            resetMessage();
+            var zip = new JSZip();
+            var packNameArray = [];
+            var packNamesString;
 
-        // find every checked item
-        $(this).find(":checked").each(function() {
-            var $this = $(this);
+            // find every checked item
+            $(this).find(":checked").each(function() {
+                var $this = $(this);
 
-            function filePerPack(length) {
-                for (var i = 1; i < length; i++) {
-                    var url = $this.data("url" + [i]);
-                    var dataFolder = $this.data("folder" + [i]);
-                    var folder = zip.folder(dataFolder);
-                    var filename = url.replace(/.*\//g, "");
-                    var result = folder.file(filename, urlToPromise(url), {
-                        binary: true
-                    });
-                }
-                return result;
-            }
-
-            var amount = $this.data("amount");
-            filePerPack(amount + 1);
-        });
-
-        $(':checked').each(function() {
-            packNamesString += $(this).data("modulename") + "\n";
-            packNameArray.push($(this).data("modulename"));
-        });
-        packNamesString = packNamesString.replaceAll(/undefined/ig, "");
-        packNameArray = packNameArray.filter(function(x) {
-            return x !== undefined;
-        });
-
-        // master files here
-        zip.file("CREDITS.txt", urlToPromise("/credits.md"), { binary: true });
-        zip.file("LICENSE.txt", urlToPromise("/LICENSE"), { binary: true });
-        zip.file("LEGAL_DISCLAIMER.txt", urlToPromise("/LEGAL_DISCLAIMER.md"), { binary: true });
-        zip.file("README.txt", urlToPromise("/mcpack/_master/readme.txt"), { binary: true });
-        zip.file("PACKS.txt", packNamesString, { binary: true });
-
-        zip.file("pack_icon.png", pack_icon_b64, {
-            base64: true
-        });
-
-        var uuid1 = uuidv4();
-        var uuid2 = uuidv4();
-
-        console.log("uuid1: " + uuid1 + "\nuuid2: " + uuid2);
-
-        var description = "§evanillatweaksbedrock.ml - " + packNameArray.toString().replaceAll(/,/ig, ", ");
-
-        var manifestInfoOBJ = {
-            "format_version": 2,
-            "header": {
-                "description": description,
-                "name": "§6Vanilla Tweaks Bedrock",
-                "uuid": uuid1,
-                "version": [0, 0, 1],
-                "min_engine_version": [1, 14, 0]
-            },
-            "modules": [{
-                "description": "§evanillatweaksbedrock.ml",
-                "type": "resources",
-                "uuid": uuid2,
-                "version": [1, 0, 0]
-            }]
-        };
-        var manifestInfo = JSON.stringify(manifestInfoOBJ);
-
-        zip.file("manifest.json", manifestInfo);
-
-        // when everything has been downloaded, we can trigger the download
-        zip.generateAsync({
-                type: "blob"
-            }, function updateCallback(metadata) {
-                var msg = "progress: " + metadata.percent.toFixed(2) + "%";
-                if (metadata.currentFile) {
-                    msg += " | adding: " + metadata.currentFile;
-                }
-                showMessage(msg);
-                updatePercent(metadata.percent | 0);
-            })
-            .then(function callback(blob) {
-
-                    // see FileSaver.js
-
-                    function makeid(length) {
-                        var result = '';
-                        var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-                        var charactersLength = characters.length;
-                        for (var i = 0; i < length; i++) {
-                            result += characters.charAt(Math.floor(Math.random() * charactersLength));
-                        }
-                        return result;
+                function filePerPack(length) {
+                    for (var i = 1; i < length; i++) {
+                        var url = $this.data("url" + [i]);
+                        var dataFolder = $this.data("folder" + [i]);
+                        var folder = zip.folder(dataFolder);
+                        var filename = url.replace(/.*\//g, "");
+                        var result = folder.file(filename, urlToPromise(url), {
+                            binary: true
+                        });
                     }
+                    return result;
+                }
 
-                    var packID = makeid(5);
+                var amount = $this.data("amount");
+                filePerPack(amount + 1);
+            });
 
-                    console.log("Filename: tweaks_" + packID + "." + fileType);
+            $(':checked').each(function() {
+                packNamesString += $(this).data("modulename") + "\n";
+                packNameArray.push($(this).data("modulename"));
+            });
+            packNamesString = packNamesString.replaceAll(/undefined/ig, "").replaceAll(/ /ig, "");
+            packNameArray = packNameArray.filter(function(x) {
+                return x !== undefined;
+            });
 
-                    saveAs(blob, "tweaks_" + packID + "." + fileType);
+            // master files here
+            zip.file("CREDITS.txt", urlToPromise("/credits.md"), { binary: true });
+            zip.file("LICENSE.txt", urlToPromise("/LICENSE"), { binary: true });
+            zip.file("LEGAL_DISCLAIMER.txt", urlToPromise("/LEGAL_DISCLAIMER.md"), { binary: true });
+            zip.file("README.txt", urlToPromise("/mcpack/_master/readme.txt"), { binary: true });
+            zip.file("PACKS.txt", packNamesString, { binary: true });
 
-                    showMessage("Thank you for downloading 😊");
+            zip.file("pack_icon.png", pack_icon_b64, {
+                base64: true
+            });
 
-                    $("#download_form").off();
+            var uuid1 = uuidv4();
+            var uuid2 = uuidv4();
+
+            console.log("uuid1: " + uuid1 + "\nuuid2: " + uuid2);
+
+            var description = "§evanillatweaksbedrock.ml - " + packNameArray.toString().replaceAll(/,/ig, ", ");
+
+            var manifestInfoOBJ = {
+                "format_version": 2,
+                "header": {
+                    "description": description,
+                    "name": "§6Vanilla Tweaks Bedrock",
+                    "uuid": uuid1,
+                    "version": [0, 0, 1],
+                    "min_engine_version": [1, 14, 0]
                 },
-                function(e) {
-                    showError(e);
-                });
+                "modules": [{
+                    "description": "§evanillatweaksbedrock.ml",
+                    "type": "resources",
+                    "uuid": uuid2,
+                    "version": [1, 0, 0]
+                }]
+            };
+            var manifestInfo = JSON.stringify(manifestInfoOBJ);
 
-        return false;
+            zip.file("manifest.json", manifestInfo);
 
+            // when everything has been downloaded, we can trigger the download
+            zip.generateAsync({
+                    type: "blob"
+                }, function updateCallback(metadata) {
+                    var msg = "progress: " + metadata.percent.toFixed(2) + "%";
+                    if (metadata.currentFile) {
+                        msg += " | adding: " + metadata.currentFile;
+                    }
+                    showMessage(msg);
+                    updatePercent(metadata.percent | 0);
+                })
+                .then(function callback(blob) {
+
+                        // see FileSaver.js
+
+                        function makeid(length) {
+                            var result = '';
+                            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                            var charactersLength = characters.length;
+                            for (var i = 0; i < length; i++) {
+                                result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                            }
+                            return result;
+                        }
+
+                        var packID = makeid(5);
+
+                        console.log("Filename: tweaks_" + packID + "." + fileType);
+
+                        saveAs(blob, "tweaks_" + packID + "." + fileType);
+
+                        showMessage("Thank you for downloading 😊");
+
+                        $("#download_form").off();
+                    },
+                    function(e) {
+                        showError(e);
+                    });
+
+            return false;
+        });
     });
 
     /**
