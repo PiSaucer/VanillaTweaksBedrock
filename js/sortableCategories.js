@@ -16,7 +16,7 @@ new Sortable(Lower, {
     ghostClass: 'sortable-ghost'
 });
 
-new Sortable(peace, {
+new Sortable(Peace, {
     animation: 150,
     group: 'shared',
     ghostClass: 'sortable-ghost'
@@ -41,6 +41,18 @@ new Sortable(GUIDiv, {
 });
 
 new Sortable(Fun, {
+    animation: 150,
+    group: 'shared',
+    ghostClass: 'sortable-ghost'
+});
+
+new Sortable(Custom, {
+    animation: 150,
+    group: 'shared',
+    ghostClass: 'sortable-ghost'
+});
+
+new Sortable(Panoramas, {
     animation: 150,
     group: 'shared',
     ghostClass: 'sortable-ghost'
