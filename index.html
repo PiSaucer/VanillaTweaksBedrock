@@ -822,11 +822,11 @@
                                             </li>
                                         </div>
                                         <h3>
-                                            <a href="#peace" data-bs-toggle="collapse">
+                                            <a href="#Peace" data-bs-toggle="collapse">
                                                 Peace and Quiet
                                             </a>
                                         </h3>
-                                        <div id="peace" class="collapse">
+                                        <div id="Peace" class="collapse">
                                             <li class="list-group-item">
                                                 <label>
                                                     <input type="checkbox"
@@ -1506,8 +1506,8 @@
                                         <div id="Panoramas" class="collapse">
                                             <li class="list-group-item">
                                                 <label>
-                                                    <input type="checkbox" data-modulename="Classic Panorama"
-                                                        data-amount=7
+                                                    <input id="classicpano" type="checkbox"
+                                                        data-modulename="Classic Panorama" data-amount=7
                                                         data-url1="/mcpack/panoramas/classic/textures/ui/panorama_0.png"
                                                         data-folder1="textures/ui"
                                                         data-url2="/mcpack/panoramas/classic/textures/ui/panorama_1.png"
@@ -1524,7 +1524,9 @@
                                                         data-folder7="textures/ui" />
                                                     <img src="img/Panoramas/Classic.png" class="moduleIcon" alt="icon">
                                                     Classic Panorama - Replaces the default Minecraft menu panorama with
-                                                    the classic one from before 1.13.
+                                                    the classic one from before 1.13. <span
+                                                        class="classicpanoWarning hide warningColoryellow">WARNING:
+                                                        Will not work with other panoramas</span>
                                                 </label>
                                             </li>
                                         </div>
