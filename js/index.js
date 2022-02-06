@@ -92,7 +92,7 @@ jQuery(function($) {
             zip.file("CREDITS.txt", urlToPromise("/credits.md"), { binary: true });
             zip.file("LICENSE.txt", urlToPromise("/LICENSE"), { binary: true });
             zip.file("LEGAL_DISCLAIMER.txt", urlToPromise("/LEGAL_DISCLAIMER.md"), { binary: true });
-            zip.file("README.txt", urlToPromise("/mcpack/_master/readme.txt"), { binary: true });
+            zip.file("README.txt", urlToPromise("/mcpack/master/readme.txt"), { binary: true });
             zip.file("PACKS.txt", packNamesString, { binary: true });
 
             zip.file("pack_icon.png", pack_icon_b64, {
