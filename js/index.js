@@ -94,10 +94,7 @@ jQuery(function($) {
             zip.file("LEGAL_DISCLAIMER.txt", urlToPromise("/LEGAL_DISCLAIMER.md"), { binary: true });
             zip.file("README.txt", urlToPromise("/mcpack/master/readme.txt"), { binary: true });
             zip.file("PACKS.txt", packNamesString, { binary: true });
-
-            zip.file("pack_icon.png", pack_icon_b64, {
-                base64: true
-            });
+            zip.file("pack_icon.png", urlToPromise("/mcpack/master/pack_icon.png"), { binary: true });
 
             var uuid1 = uuidv4();
             var uuid2 = uuidv4();
