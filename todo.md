@@ -6,8 +6,9 @@
   - [x] Add images for each module
   - [ ] Dark Mode Switch (default dark)
 - [ ] Improved README.md
-- [ ] Add to mcpedl
+- [x] Add to mcpedl
 - [ ] Add More Packs from the website
+- [x] Convertor
 
 ## Packs to Add 
 
@@ -72,8 +73,8 @@
 
 Can't do Options Background
 
-### Create Menu Panoramas
-- [ ] Classic
+### Menu Panoramas
+- [x] Classic
 - [ ] Ocean
 - [ ] Village
 - [ ] Bees
