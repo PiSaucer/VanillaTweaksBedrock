@@ -108,6 +108,9 @@ document.getElementById('select-all').onchange = function() {
 
     //Classic Pano
     compatibilityCheck("classicpano", "classicpanoWarning");
+
+    //Ocean Pano
+    compatibilityCheck("oceanpano", "oceanpanoWarning");
 }
 
 
@@ -279,4 +282,9 @@ document.getElementById("honey_slime").onchange = function() {
 //Classic Pano
 document.getElementById("classicpano").onchange = function() {
     compatibilityCheck("classicpano", "classicpanoWarning");
+}
+
+//Ocean Pano
+document.getElementById("oceanpano").onchange = function() {
+    compatibilityCheck("oceanpano", "oceanpanoWarning");
 }
