@@ -163,6 +163,7 @@ Can't do Options Background
 - [ ] Legacy Console Snowball
 
 ## Custom Packs
+- [ ] Remove Marketplace Button Style
 - [ ] Xbox 360 Controller
 - [ ] Xbox One Controller
 - [ ] Playstation 3 Controller
