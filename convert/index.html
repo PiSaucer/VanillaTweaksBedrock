@@ -3,6 +3,7 @@
 
 <head>
     <title>Zip File to Vanilla Tweaks Bedrock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Favicon Information-->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=xQ7PKzLjOX">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=xQ7PKzLjOX">
@@ -90,6 +91,23 @@
             background-color: #0a58ca;
             color: white;
         }
+        
+        .mobileOnly {
+            display: none;
+        }
+        
+        .dekstopOnly {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .mobileOnly {
+                display: block;
+            }
+            .dekstopOnly {
+                display: none;
+            }
+        }
     </style>
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/jszip.js"></script>
@@ -102,7 +120,11 @@
         <h1>Zip File to Vanilla Tweaks Bedrock</h1>
         <hr>
     </div>
-    <div class="container">
+    <div class="mobileOnly text-center" style="font-size: 80px;">
+        <h1 style="font-size: 80px;">DOES NOT WORK ON MOBILE</h1>
+        <a href="../">GO HOME</a>.
+    </div>
+    <div class="container dekstopOnly">
         <div class="row">
             <div class="col">
                 <h5>Category/PackName:</h5>
