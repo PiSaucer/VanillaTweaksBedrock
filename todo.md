@@ -75,7 +75,7 @@ Can't do Options Background
 
 ### Menu Panoramas
 - [x] Classic
-- [ ] Ocean
+- [x] Ocean
 - [ ] Village
 - [ ] Bees
 - [ ] Nether
