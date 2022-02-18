@@ -72,8 +72,7 @@
 - [ ] Rainbow Experience Bar
 
 ### GUI
-- [ ] Dark mode pack
-  - [ ] Make full dir and file
+- [ ] Dark mode
 - [ ] Smoother Font
 - [ ] Numbered Hotbar
 - [ ] Transparent UI
@@ -171,6 +170,7 @@ Can't do Options Background
 
 ## Custom Packs
 - [ ] Remove Marketplace Button Style
+- [ ] Remove Vignette
 - [ ] New Caledonia Menu Panorama
 - [ ] Legacy Consoles
   - [ ] Legacy Console Splashes and Loading Messages
