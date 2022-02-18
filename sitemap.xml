@@ -1,18 +1,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>https://vanillatweaksbedrock.ml/</loc>
-  <lastmod>2022-01-31</lastmod>
+  <lastmod>2022-02-18</lastmod>
 </url>
 <url>
   <loc>https://vanillatweaksbedrock.ml/legal.html</loc>
-  <lastmod>2022-01-31</lastmod>
+  <lastmod>2022-02-18</lastmod>
 </url>
 <url>
   <loc>https://vanillatweaksbedrock.ml/credits.html</loc>
-  <lastmod>2022-01-31</lastmod>
+  <lastmod>2022-02-18</lastmod>
 </url>
 <url>
-  <loc>https://vanillatweaksbedrock.ml/LICENSE.html</loc>
-  <lastmod>2022-01-31</lastmod>
+  <loc>https://vanillatweaksbedrock.ml/licenses/</loc>
+  <lastmod>2022-02-18</lastmod>
+</url>
+<url>
+  <loc>https://vanillatweaksbedrock.ml/convert/</loc>
+  <lastmod>2022-02-18</lastmod>
 </url>
 </urlset>
