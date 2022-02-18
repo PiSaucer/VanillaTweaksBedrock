@@ -12,12 +12,12 @@
 
 
 ## Issues
-- [x] [readme.txt 404 error](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/3)
-- [x] [Fix Mobile Export Option for EDU Version](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/5)
-- [ ] [Load, Update, and Modify tweaks](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/4)
+- [x] [readme.txt 404 error - Issue 3](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/3)
+- [ ] [Load, Update, and Modify tweaks - Issue 4](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/4)
   - [x] Write Data to a file
   - [ ] Read Data from a file
   - [ ] Enable packs from the data
+- [x] [Fix Mobile Export Option for EDU Version - Issue 5](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/5)
 
 ## Packs to Add 
 
