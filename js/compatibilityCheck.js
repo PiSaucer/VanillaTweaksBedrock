@@ -106,6 +106,9 @@ document.getElementById('select-all').onchange = function() {
     //honey_slime
     compatibilityCheck("honey_slime", "honey_slimeWarning");
 
+    //Dark Mode
+    compatibilityCheck("darkmode", "darkmodeWarning");
+
     //Classic Pano
     compatibilityCheck("classicpano", "classicpanoWarning");
 
@@ -280,6 +283,11 @@ document.getElementById('sticky_sides').onchange = function() {
 //honey_slime
 document.getElementById("honey_slime").onchange = function() {
     compatibilityCheck("honey_slime", "honey_slimeWarning");
+}
+
+//Dark Mode
+document.getElementById("darkmode").onchange = function() {
+    compatibilityCheck("darkmode", "darkmodeWarning");
 }
 
 //Classic Pano

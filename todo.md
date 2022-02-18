@@ -72,7 +72,7 @@
 - [ ] Rainbow Experience Bar
 
 ### GUI
-- [ ] Dark mode
+- [x] [Dark mode](https://github.com/Offroaders123/Dark-Mode)
 - [ ] Smoother Font
 - [ ] Numbered Hotbar
 - [ ] Transparent UI
