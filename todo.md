@@ -9,7 +9,11 @@
 - [x] Add to mcpedl
 - [x] Convertor
 - [ ] Improved README.md
-- [ ] [Fix Mobile Export Option for EDU Version](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/5)
+
+
+## Issues
+- [x] [readme.txt 404 error](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/3)
+- [x] [Fix Mobile Export Option for EDU Version](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/5)
 - [ ] [Load, Update, and Modify tweaks](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/4)
   - [x] Write Data to a file
   - [ ] Read Data from a file
