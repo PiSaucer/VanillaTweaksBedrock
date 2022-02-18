@@ -111,6 +111,9 @@ document.getElementById('select-all').onchange = function() {
 
     //Ocean Pano
     compatibilityCheck("oceanpano", "oceanpanoWarning");
+
+    //Village Pano
+    compatibilityCheck("villagepano", "villagepanoWarning");
 }
 
 
@@ -287,4 +290,9 @@ document.getElementById("classicpano").onchange = function() {
 //Ocean Pano
 document.getElementById("oceanpano").onchange = function() {
     compatibilityCheck("oceanpano", "oceanpanoWarning");
+}
+
+//Village Pano
+document.getElementById("villagepano").onchange = function() {
+    compatibilityCheck("villagepano", "villagepanoWarning");
 }

@@ -82,7 +82,7 @@ Can't do Options Background
 ### Menu Panoramas
 - [x] Classic
 - [x] Ocean
-- [ ] Village
+- [x] Village
 - [ ] Bees
 - [ ] Nether
 - [ ] Amethyst Geode
