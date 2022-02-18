@@ -1,16 +1,20 @@
 <div align="center" style="display: block; margin-left: auto; margin-right: auto;">  
-  
-  <img align="left" src="img/logo-2048.png" alt="logo" height="32" width="32">
-  <h1>Vanilla Tweaks Bedrock Edition</h1>
 
+  <a href="https://vanillatweaksbedrock.ml/"><img align="left" src="img/logo-2048.png" alt="logo" height="50" width="50"></a>
+  <h1>Vanilla Tweaks Bedrock Edition</h1>
+  
   [![license](https://img.shields.io/github/license/pisaucer/VanillaTweaksBedrock?color=blue)](LICENSE)
   [![forks](https://img.shields.io/github/forks/pisaucer/VanillaTweaksBedrock.svg)](https://github.com/pisaucer/VanillaTweaksBedrock/network/members)
   [![contributors](https://img.shields.io/github/contributors/pisaucer/VanillaTweaksBedrock?color=green)](https://github.com/pisaucer/VanillaTweaksBedrock/graphs/contributors)
   ![size](https://img.shields.io/github/repo-size/pisaucer/VanillaTweaksBedrock?color=green)
-
-</div>
+  
+  
+    
+  ![banner](img/banner.png)
 
 An unofficial port of Minecraft Vanilla Tweaks for Bedrock with Modular Downloading.
+  
+</div>
 
 Please read the [LEGAL_DISCLAIMER](LEGAL_DISCLAIME.md) to know that this a unoffical port. Check out the [Credits](credits.md). This project follows the [MIT LICENSE](LICENSE). If you have any issues please don't hesitate to contact me on GitHub.
 
