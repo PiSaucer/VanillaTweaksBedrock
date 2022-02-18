@@ -109,6 +109,9 @@ document.getElementById('select-all').onchange = function() {
     //Dark Mode
     compatibilityCheck("darkmode", "darkmodeWarning");
 
+    //Mobile Export EDU Warning
+    compatibilityCheck("mobileExport", "mobileExportWarning");
+
     //Classic Pano
     compatibilityCheck("classicpano", "classicpanoWarning");
 
@@ -291,6 +294,11 @@ document.getElementById("honey_slime").onchange = function() {
 //Dark Mode
 document.getElementById("darkmode").onchange = function() {
     compatibilityCheck("darkmode", "darkmodeWarning");
+}
+
+//Mobile Export EDU Warning
+document.getElementById("mobileExport").onchange = function() {
+    compatibilityCheck("mobileExport", "mobileExportWarning");
 }
 
 //Classic Pano
