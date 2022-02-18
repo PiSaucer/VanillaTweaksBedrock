@@ -83,7 +83,7 @@ Can't do Options Background
 - [x] Classic
 - [x] Ocean
 - [x] Village
-- [ ] Bees
+- [x] Bees
 - [ ] Nether
 - [ ] Amethyst Geode
 - [ ] The End

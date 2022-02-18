@@ -117,6 +117,9 @@ document.getElementById('select-all').onchange = function() {
 
     //Village Pano
     compatibilityCheck("villagepano", "villagepanoWarning");
+
+    //Bees Pano
+    compatibilityCheck("beepano", "beepanoWarning");
 }
 
 
@@ -303,4 +306,9 @@ document.getElementById("oceanpano").onchange = function() {
 //Village Pano
 document.getElementById("villagepano").onchange = function() {
     compatibilityCheck("villagepano", "villagepanoWarning");
+}
+
+//Bees Pano
+document.getElementById("beepano").onchange = function() {
+    compatibilityCheck("beepano", "beepanoWarning");
 }
