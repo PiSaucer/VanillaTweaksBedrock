@@ -171,7 +171,16 @@ Can't do Options Background
 ## Custom Packs
 - [ ] Remove Marketplace Button Style
 - [ ] Remove Vignette
-- [ ] New Caledonia Menu Panorama
+- [ ] New Caledonia
+  - [ ] New Caledonia Menu Panorama
+    - [ ] After-1.4.12
+    - [ ] Before-1.4.12
+  - [ ] NC Food and Stages
+  - [ ] NC Phantom Membrane
+  - [ ] NC Character Beds
+  - [ ] NC Darker Bricks
+  - [ ] NC Light Diamond
+  - [ ] NC Creeper Pumpkin
 - [ ] Legacy Consoles
   - [ ] Legacy Console Splashes and Loading Messages
   - [ ] Xbox 360 Controller
@@ -181,15 +190,16 @@ Can't do Options Background
   - [ ] Wii U
   - [ ] Switch Controller
   - [ ] Old Pocket Edition UI?
-- [ ] Light Diamond
 - [ ] Spawn Egg Icons
 - [ ] Yellow Uno Reverse Totem
 - [ ] Red Uno Reverse Totem
 - [ ] Green Uno Reverse Totem
 - [ ] Blue Uno Reverse Totem
-- [ ] Creeper Pumpkin
 - [ ] Purple UI
 - [ ] Orange UI
 - [ ] Orange Elytra
 - [ ] Elecrtic Redstone
-- [ ] NC Food and Stages
+- [ ] DOOM Nether
+- [ ] [Andreas Zoeller Music Pack](https://www.curseforge.com/minecraft-bedrock/addons/orchestra-soundpack-bedrock) - MIT LICENSE
+  - [ ] Side A
+  - [ ] Side B
