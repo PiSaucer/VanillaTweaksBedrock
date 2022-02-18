@@ -1,14 +1,19 @@
 # To Do
-- [ ] Dark mode pack
-  - [ ] Make full dir and file
-- [ ] Make site look better
-  - [x] make the menu colaspable
-  - [x] Add images for each module
-  - [ ] Dark Mode Switch (default dark)
-- [ ] Improved README.md
-- [x] Add to mcpedl
 - [ ] Add More Packs from the website
+- [ ] Make site look better
+  - [x] Add images for each module
+  - [x] Make the menu colaspable
+  - [ ] Add open all menus
+  - [ ] Select everyone from one menu
+  - [ ] Dark Mode Switch (default dark)
+- [x] Add to mcpedl
 - [x] Convertor
+- [ ] Improved README.md
+- [ ] [Fix Mobile Export Option for EDU Version](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/5)
+- [ ] [Load, Update, and Modify tweaks](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/4)
+  - [x] Write Data to a file
+  - [ ] Read Data from a file
+  - [ ] Enable packs from the data
 
 ## Packs to Add 
 
@@ -67,6 +72,8 @@
 - [ ] Rainbow Experience Bar
 
 ### GUI
+- [ ] Dark mode pack
+  - [ ] Make full dir and file
 - [ ] Smoother Font
 - [ ] Numbered Hotbar
 - [ ] Transparent UI
@@ -164,24 +171,25 @@ Can't do Options Background
 
 ## Custom Packs
 - [ ] Remove Marketplace Button Style
-- [ ] Xbox 360 Controller
-- [ ] Xbox One Controller
-- [ ] Playstation 3 Controller
-- [ ] Playstation 4 Controller
-- [ ] Wii U
-- [ ] Switch Controller
 - [ ] New Caledonia Menu Panorama
-- [ ] Legacy Console Splashes and Loading Messages
+- [ ] Legacy Consoles
+  - [ ] Legacy Console Splashes and Loading Messages
+  - [ ] Xbox 360 Controller
+  - [ ] Xbox One Controller
+  - [ ] Playstation 3 Controller
+  - [ ] Playstation 4 Controller
+  - [ ] Wii U
+  - [ ] Switch Controller
+  - [ ] Old Pocket Edition UI?
 - [ ] Light Diamond
 - [ ] Spawn Egg Icons
 - [ ] Yellow Uno Reverse Totem
 - [ ] Red Uno Reverse Totem
 - [ ] Green Uno Reverse Totem
 - [ ] Blue Uno Reverse Totem
-- [ ] NC Food and Stages
 - [ ] Creeper Pumpkin
 - [ ] Purple UI
 - [ ] Orange UI
 - [ ] Orange Elytra
 - [ ] Elecrtic Redstone
-- [ ] Old Pocket Edition UI
+- [ ] NC Food and Stages
