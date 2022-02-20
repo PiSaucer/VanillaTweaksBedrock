@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Not Released Yet (Currently working on) [0.0.5] - 2022-02-20
+### Added
+- Converter page to make my life easier
+- [`Sitemap.xml`](sitemap.xml)
+- [`todo.md`](todo.md)
+
+### Changed
+- Web hosting from Firebase to GitHub Pages
+- Readme Information
+
+### Fixed
+- [readme.txt 404 error - Issue 3](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/3)
+- [Fix Mobile Export Option for EDU Version - Issue 5](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/5)
+
 ## [0.0.4] - 2021-02-22
 ### Added
 - Change the jquery from 1.8.3 to 3.5.1
