@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Vanilla Tweaks Bedrock Detect Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Favicon Information-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=xQ7PKzLjOX">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=xQ7PKzLjOX">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=xQ7PKzLjOX">
+    <link rel="manifest" href="/favicon/site.webmanifest?v=xQ7PKzLjOX">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=xQ7PKzLjOX" color="#2772a4">
+    <link rel="shortcut icon" href="/favicon/favicon.ico?v=xQ7PKzLjOX">
+    <meta name="msapplication-TileColor" content="#2772a4">
+    <meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png?v=xQ7PKzLjOX">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=xQ7PKzLjOX">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Vanilla Tweaks Bedrock">
+    <meta name="description" content="An unofficial port of Minecraft Vanilla Tweaks for Bedrock - With Customize Downloading!!!">
+    <meta name="keywords" content="Vanilla Tweaks Bedrock web app, Vanilla Tweaks Bedrock, Vanilla Tweaks Ported to Bedrock, Vanilla Tweaks Minecraft Bedrock web app, Minecraft Bedrock Tweaks">
+    <meta name="language" content="English">
+    <meta name="author" content="PiSaucer">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vanillatweakbedrock.ml/detect/">
+    <meta property="og:title" content="Vanilla Tweaks Bedrock">
+    <meta property="og:description" content="An unofficial port of Minecraft Vanilla Tweaks for Bedrock - With Customize Downloading!!!">
+    <meta property="og:image" content="https://vanillatweakbedrock.ml/img/logo-2048.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vanillatweakbedrock.ml/detect/">
+    <meta property="twitter:title" content="Vanilla Tweaks Bedrock">
+    <meta property="twitter:description" content="An unofficial port of Minecraft Vanilla Tweaks for Bedrock - With Customize Downloading!!!">
+    <meta property="twitter:image" content="https://vanillatweakbedrock.ml/img/logo-2048.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        textarea {
+            font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+            font-size: 12px;
+            width: 100%;
+        }
+        
+        body {
+            padding: 10px 16px 0px 16px;
+        }
+        
+        #drop-area {
+            border: 2px dashed #ccc;
+            padding: 20px;
+        }
+        
+        input[type=file]::file-selector-button {
+            border: #0d6efd !important;
+            background: #0d6efd !important;
+            color: white;
+            border: 1px solid transparent;
+            border-radius: 0.25rem;
+        }
+        
+        .file-upload-content {
+            display: none;
+            text-align: center;
+        }
+        
+        .file-upload-input {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 0px;
+            right: 0px;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            opacity: 0;
+            cursor: pointer;
+        }
+        
+        .upload-wrap {
+            margin-top: 20px;
+            border: 2px dashed #0d6efd;
+            position: relative;
+            padding: 30px 0px;
+        }
+        
+        .upload-wrap:hover {
+            background-color: #0a58ca;
+            color: white;
+        }
+        
+        .mobileOnly {
+            display: none;
+        }
+        
+        .dekstopOnly {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .mobileOnly {
+                display: block;
+            }
+            .dekstopOnly {
+                display: none;
+            }
+        }
+    </style>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jszip.js"></script>
+    <script src="detectPacks.js"></script>
+</head>
+
+<body>
+    <div class="text-center">
+        <a href="../"><img align="left" src="../img/logo-2048.png" alt="logo" height="50" width="50"></a>
+        <h1>Vanilla Tweaks Bedrock Detect Test</h1>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="drop-area" class="text-center">
+                    <form class="my-form">
+                        <input class="form-control" type="file" id="myfile" onchange="onMyfileChange(this)">
+                    </form>
+                    <div class="upload-wrap">
+                        <input class="file-upload-input" type='file' onchange="onMyfileChange(this)" />
+                        <div class="drag-text text-center">
+                            <p>Drag and drop</hp>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <textarea id="convertedPath" rows="25" cols="50"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>
+        anchors.add();
+    </script>
+</body>
+
+</html>
