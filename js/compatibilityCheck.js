@@ -123,6 +123,9 @@ document.getElementById('select-all').onchange = function() {
 
     //Bees Pano
     compatibilityCheck("beepano", "beepanoWarning");
+
+    //Nether Pano
+    compatibilityCheck("netherpano", "netherpanoWarning");
 }
 
 
@@ -319,4 +322,9 @@ document.getElementById("villagepano").onchange = function() {
 //Bees Pano
 document.getElementById("beepano").onchange = function() {
     compatibilityCheck("beepano", "beepanoWarning");
+}
+
+//Nether Pano
+document.getElementById("netherpano").onchange = function() {
+    compatibilityCheck("netherpano", "netherpanoWarning");
 }
