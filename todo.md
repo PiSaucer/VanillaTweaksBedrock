@@ -15,7 +15,7 @@
 - [x] [readme.txt 404 error - Issue 3](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/3)
 - [ ] [Load, Update, and Modify tweaks - Issue 4](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/4)
   - [x] Write Data to a file
-  - [ ] Read Data from a file
+  - [x] Read Data from a file - [vanillatweaksbedrock.ml/detect/](https://vanillatweaksbedrock.ml/detect/)
   - [ ] Enable packs from the data
 - [x] [Fix Mobile Export Option for EDU Version - Issue 5](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/5)
 
