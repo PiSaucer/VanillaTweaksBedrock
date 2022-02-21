@@ -1,4 +1,4 @@
-function onMyfileChange(fileInput) {
+function detectPacks(fileInput) {
     document.getElementById("convertedPath").value = "";
     if (fileInput.files[0] == undefined) {
         return;
