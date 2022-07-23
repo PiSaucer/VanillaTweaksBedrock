@@ -1,0 +1,65 @@
+textarea {
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    font-size: 12px;
+    width: 100%;
+}
+
+#drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+}
+
+input[type=file]::file-selector-button {
+    border: #0d6efd !important;
+    background: #0d6efd !important;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-wrap {
+    margin-top: 20px;
+    border: 2px dashed #0d6efd;
+    position: relative;
+    padding: 30px 0px;
+}
+
+.upload-wrap:hover {
+    background-color: #0a58ca;
+    color: white;
+}
+
+.mobileOnly {
+    display: none;
+}
+
+.dekstopOnly {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .mobileOnly {
+        display: block;
+    }
+    .dekstopOnly {
+        display: none;
+    }
+}
