@@ -87,6 +87,8 @@ jQuery(function($) {
             packNameArray = packNameArray.filter(function(x) {
                 return x !== undefined;
             });
+            packNamesString = packNamesString.replace(/.*/, "").substr(1);
+            packNamesString = packNamesString.substring(0, packNamesString.length - 1);
 
             // master files here
             zip.file("CREDITS.txt", urlToPromise("/credits.md"), { binary: true });

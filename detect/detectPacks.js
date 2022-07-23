@@ -23,7 +23,4 @@ function detectPacks(fileInput) {
         console.error("Failed to read file", err);
     }
     reader.readAsArrayBuffer(fileInput.files[0]);
-    setTimeout(function() {
-        document.getElementById("convertedPath").value = document.getElementById("convertedPath").value.replace(/.*/, "").substr(1);
-    }, 100);
 }
