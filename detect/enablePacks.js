@@ -1,7 +1,6 @@
 function enablePacks() {
     let packsString = document.getElementById("convertedPath").value;
     let packsArray = packsString.split("\n");
-    packsArray.pop();
     packsArray.forEach(element => {
         if (document.getElementById(element)) {
             document.getElementById(element).checked = true;

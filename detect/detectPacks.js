@@ -23,4 +23,8 @@ function detectPacks(fileInput) {
         console.error("Failed to read file", err);
     }
     reader.readAsArrayBuffer(fileInput.files[0]);
+    setTimeout(function() {
+        document.getElementById("convertedPath").value = document.getElementById("convertedPath").value.substring(0, document.getElementById("convertedPath").value.length - 1);
+        enablePacks();
+    }, 150);
 }
