@@ -10,7 +10,7 @@ function detectPacks(fileInput) {
             zip.forEach(function(relativePath, zipEntry) {
                 if (zipEntry.name == "PACKS.txt") {
                     zip.file(zipEntry.name).async("string").then(function(result) {
-                        document.getElementById("convertedPath").value = result;
+                        document.getElementById("convertedPath").value = result + "\n";
                     });
                 }
             });
@@ -23,4 +23,7 @@ function detectPacks(fileInput) {
         console.error("Failed to read file", err);
     }
     reader.readAsArrayBuffer(fileInput.files[0]);
+    setTimeout(function() {
+        document.getElementById("convertedPath").value = document.getElementById("convertedPath").value.replace(/.*/, "").substr(1);
+    }, 100);
 }
