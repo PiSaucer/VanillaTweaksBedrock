@@ -38,80 +38,13 @@
     <meta property="twitter:image" content="https://vanillatweakbedrock.ml/img/logo-2048.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <style>
-        textarea {
-            font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-            font-size: 12px;
-            width: 100%;
-        }
-        
-        body {
-            padding: 10px 16px 0px 16px;
-        }
-        
-        #drop-area {
-            border: 2px dashed #ccc;
-            padding: 20px;
-        }
-        
-        input[type=file]::file-selector-button {
-            border: #0d6efd !important;
-            background: #0d6efd !important;
-            color: white;
-            border: 1px solid transparent;
-            border-radius: 0.25rem;
-        }
-        
-        .file-upload-content {
-            display: none;
-            text-align: center;
-        }
-        
-        .file-upload-input {
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            top: 0px;
-            right: 0px;
-            width: 100%;
-            height: 100%;
-            outline: none;
-            opacity: 0;
-            cursor: pointer;
-        }
-        
-        .upload-wrap {
-            margin-top: 20px;
-            border: 2px dashed #0d6efd;
-            position: relative;
-            padding: 30px 0px;
-        }
-        
-        .upload-wrap:hover {
-            background-color: #0a58ca;
-            color: white;
-        }
-        
-        .mobileOnly {
-            display: none;
-        }
-        
-        .dekstopOnly {
-            display: block;
-        }
-        
-        @media (max-width: 768px) {
-            .mobileOnly {
-                display: block;
-            }
-            .dekstopOnly {
-                display: none;
-            }
-        }
-    </style>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/detectPacks.css" rel="stylesheet">
+
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/jszip.js"></script>
     <script src="detectPacks.js"></script>
+    <script src="enablePacks.js"></script>
 </head>
 
 <body>
@@ -137,7 +70,31 @@
             </div>
             <div class="col">
                 <textarea id="convertedPath" rows="25" cols="50"></textarea>
+                <button type="button" class="btn btn-primary" onclick="enablePacks()">Enable Packs</button>
             </div>
+        </div>
+        <div class="row">
+            <ul id="sortablelist">
+                <li class="list-group-item">
+                    <label>
+                        <input type="checkbox" id="BlackNetherBricks" data-modulename="Black Nether Bricks"
+                            data-amount=4
+                            data-url1="/mcpack/aesthetic/bl_ne_br/textures/blocks/chiseled_nether_bricks.png"
+                            data-folder1="textures/blocks"
+                            data-url2="/mcpack/aesthetic/bl_ne_br/textures/blocks/cracked_nether_bricks.png"
+                            data-folder2="textures/blocks"
+                            data-url3="/mcpack/aesthetic/bl_ne_br/textures/blocks/nether_brick.png"
+                            data-folder3="textures/blocks"
+                            data-url4="/mcpack/aesthetic/bl_ne_br/textures/items/netherbrick.png"
+                            data-folder4="textures/items" />
+                        <img src="/img/Aesthetic/BlackNetherBricks.png" class="moduleIcon" alt="icon">
+                        Black Nether Bricks - Changes the texture of Nether Bricks to make
+                        them black.
+                        <span class="BlackNetherBricksWarning hide warningColoryellow">WARNING:
+                            Will not work with Brighter Nether</span>
+                    </label>
+                </li>
+            </ul>
         </div>
     </div>
 
