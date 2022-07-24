@@ -25,6 +25,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/detectPacks.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
 
@@ -40,7 +41,10 @@
 
 
     <script type="text/javascript" src="js/FileSaver.js"></script>
+
     <script type="text/javascript" src="js/collapsible.js"></script>
+    <script type="text/javascript" src="js/detectPacks.js"></script>
+    <script type="text/javascript" src="js/enablePacks.js"></script>
 
     <!-- Primary Meta Tags -->
     <title>Vanilla Tweaks Bedrock - Web App</title>
@@ -2857,13 +2861,42 @@
                             </div>
                         </div>
                     </div>
-                    <script type="text/javascript" src="/js/index.js"></script>
-                    <script type="text/javascript" src="/js/sortableCategories.js"></script>
-                    <script type="text/javascript" src="js/compatibilityCheck.js"></script>
                 </div>
             </div>
         </div>
-        <!--
+        <hr>
+        <div class="container">
+            <div class="row">
+                <h2>Modify Tweaks from an Previous Resource Packs</h2>
+                <br>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div id="drop-area" class="text-center">
+                        <form class="my-form">
+                            <input class="form-control" type="file" id="myfile" onchange="detectPacks(this)">
+                        </form>
+                        <div class="upload-wrap">
+                            <input class="file-upload-input" type='file' onchange="detectPacks(this)" />
+                            <div class="drag-text text-center">
+                                <p>Drag and drop</hp>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <textarea id="convertedPath" rows="25" cols="50"></textarea>
+                    <br>
+                    <button type="button" class="btn btn-primary" onclick="enablePacks()">Enable Packs</button>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <script type="text/javascript" src="/js/index.js"></script>
+            <script type="text/javascript" src="/js/sortableCategories.js"></script>
+            <script type="text/javascript" src="js/compatibilityCheck.js"></script>
+            <!--
                              ____
                 /___.`--.____ .--. ____.--(
                        .'_.- (    ) -._'.
@@ -2890,6 +2923,7 @@
 '--..__..--'               '-.____.-'                '--..__..-'
         
 -->
+
 </body>
 
 </html>
