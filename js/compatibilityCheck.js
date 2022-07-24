@@ -13,11 +13,11 @@ document.getElementById('select-all').onchange = function() {
     //CleanGlass
     compatibilityCheck("CleanGlass", "CleanGlassWarning");
 
-    //BorderlessSTGlass
-    compatibilityCheck("BorderlessSTGlass", "BorderlessSTGlassWarning");
+    //BorderlessStainedGlass
+    compatibilityCheck("BorderlessStainedGlass", "BorderlessStainedGlassWarning");
 
-    //CleanSTGlass
-    compatibilityCheck("CleanSTGlass", "CleanSTGlassWarning");
+    //CleanStainedGlass
+    compatibilityCheck("CleanStainedGlass", "CleanStainedGlassWarning");
 
     //TransparentShields
     compatibilityCheck("TransparentShields", "TransShieldWarning");
@@ -25,23 +25,23 @@ document.getElementById('select-all').onchange = function() {
     //LowerShield
     compatibilityCheck("LowerShield", "LowShieldWarning");
 
-    //transPump
-    compatibilityCheck("transPump", "transPumpWarning");
+    //TransparentPumpkin
+    compatibilityCheck("TransparentPumpkin", "TransparentPumpkinWarning");
 
-    //NoPump
-    compatibilityCheck("NoPump", "NoPumpWarning");
+    //NoPumpkinOverlay
+    compatibilityCheck("NoPumpkinOverlay", "NoPumpkinOverlayWarning");
 
-    //altpart
-    compatibilityCheck("altpart", "altpartWarning");
+    //AlternateParticles
+    compatibilityCheck("AlternateParticles", "AlternateParticlesWarning");
 
-    //unobrain
-    compatibilityCheck("unobrain", "unobrainWarning");
+    //UnobtrusiveRain
+    compatibilityCheck("UnobtrusiveRain", "UnobtrusiveRainWarning");
 
     //BlackNetherBricks
     compatibilityCheck("BlackNetherBricks", "BlackNetherBricksWarning");
 
-    //brig_neth
-    compatibilityCheck("brig_neth", "brig_nethWarning");
+    //BrighterNether
+    compatibilityCheck("BrighterNether", "BrighterNetherWarning");
 
     //OreBorders
     compatibilityCheck("OreBorders", "OreBordersWarning");
@@ -49,80 +49,80 @@ document.getElementById('select-all').onchange = function() {
     //UniformOres
     compatibilityCheck("UniformOres", "UniformOresWarning");
 
-    //gr_sid
-    compatibilityCheck("gr_sid", "gr_sidWarning");
+    //GrassSides
+    compatibilityCheck("GrassSides", "GrassSidesWarning");
 
-    //low_grass
-    compatibilityCheck("low_grass", "low_grassWarning");
+    //LowerGrass
+    compatibilityCheck("LowerGrass", "LowerGrassWarning");
 
-    //myc_sid
-    compatibilityCheck("myc_sid", "myc_sidWarning");
+    //MyceliumSides
+    compatibilityCheck("MyceliumSides", "MyceliumSidesWarning");
 
-    //low_myc
-    compatibilityCheck("low_myc", "low_mycWarning");
+    //LowerMycelium
+    compatibilityCheck("LowerMycelium", "LowerMyceliumWarning");
 
-    //no_peb_dirt
-    compatibilityCheck("no_peb_dirt", "no_peb_dirtWarning");
+    //Pebble-lessDirt
+    compatibilityCheck("Pebble-lessDirt", "Pebble-lessDirtWarning");
 
-    //path_sid
-    compatibilityCheck("path_sid", "path_sidWarning");
+    //PathSides
+    compatibilityCheck("PathSides", "PathSidesWarning");
 
-    //low_path
-    compatibilityCheck("low_path", "low_pathWarning");
+    //LowerPaths
+    compatibilityCheck("LowerPaths", "LowerPathsWarning");
 
-    //pod_side
-    compatibilityCheck("pod_side", "pod_sideWarning");
+    //PodzolSides
+    compatibilityCheck("PodzolSides", "PodzolSidesWarning");
 
-    //low_pod
-    compatibilityCheck("low_pod", "low_podWarning");
+    //LowerPodzol
+    compatibilityCheck("LowerPodzol", "LowerPodzolWarning");
 
-    //snow_sid
-    compatibilityCheck("snow_sid", "snow_sidWarning");
+    //SnowSides
+    compatibilityCheck("SnowSides", "SnowSidesWarning");
 
-    //low_snow
-    compatibilityCheck("low_snow", "low_snowWarning");
+    //LowerSnow
+    compatibilityCheck("LowerSnow", "LowerSnowWarning");
 
-    //crim_sid
-    compatibilityCheck("crim_sid", "crim_sidWarning");
+    //CrimsonNyliumSides
+    compatibilityCheck("CrimsonNyliumSides", "CrimsonNyliumSidesWarning");
 
-    //low_crim
-    compatibilityCheck("low_crim", "low_crimWarning");
+    //LowerCrimsonNylium
+    compatibilityCheck("LowerCrimsonNylium", "LowerCrimsonNyliumWarning");
 
-    //warp_sid
-    compatibilityCheck("warp_sid", "warp_sidWarning");
+    //WarpedNyliumSides
+    compatibilityCheck("WarpedNyliumSides", "WarpedNyliumSidesWarning");
 
-    //low_warp
-    compatibilityCheck("low_warp", "low_warpWarning");
+    //LowerWarpedNylium
+    compatibilityCheck("LowerWarpedNylium", "LowerWarpedNyliumWarning");
 
-    //nobeacbeam
-    compatibilityCheck("nobeacbeam", "nobeacbeamWarning");
+    //NoBeaconBeam
+    compatibilityCheck("NoBeaconBeam", "NoBeaconBeamWarning");
 
-    //bacon_beam
-    compatibilityCheck("bacon_beam", "bacon_beamWarning");
+    //BaconBeam
+    compatibilityCheck("BaconBeam", "BaconBeamWarning");
 
-    //sticky_sides
-    compatibilityCheck("sticky_sides", "sticky_sidesWarning");
+    //StickyPistonSides
+    compatibilityCheck("StickyPistonSides", "StickyPistonSidesWarning");
 
-    //honey_slime
-    compatibilityCheck("honey_slime", "honey_slimeWarning");
+    //HoneySlime
+    compatibilityCheck("HoneySlime", "HoneySlimeWarning");
 
     //Dark Mode
-    compatibilityCheck("darkmode", "darkmodeWarning");
+    compatibilityCheck("DarkMode", "DarkModeWarning");
 
     //Mobile Export EDU Warning
-    compatibilityCheck("mobileExport", "mobileExportWarning");
+    compatibilityCheck("MobileExport", "MobileExportWarning");
 
     //Classic Pano
-    compatibilityCheck("classicpano", "classicpanoWarning");
+    compatibilityCheck("ClassicPanorama", "ClassicPanoramaWarning");
 
     //Ocean Pano
-    compatibilityCheck("oceanpano", "oceanpanoWarning");
+    compatibilityCheck("OceanPanorama", "OceanPanoramaWarning");
 
     //Village Pano
-    compatibilityCheck("villagepano", "villagepanoWarning");
+    compatibilityCheck("VillagePanorama", "VillagePanoramaWarning");
 
     //Bees Pano
-    compatibilityCheck("beepano", "beepanoWarning");
+    compatibilityCheck("BeesPanorama", "BeesPanoramaWarning");
 
     //Nether Pano
     compatibilityCheck("netherpano", "netherpanoWarning");
@@ -139,14 +139,14 @@ document.getElementById('CleanGlass').onchange = function() {
     compatibilityCheck("CleanGlass", "CleanGlassWarning");
 }
 
-//BorderlessSTGlass
-document.getElementById('BorderlessSTGlass').onchange = function() {
-    compatibilityCheck("BorderlessSTGlass", "BorderlessSTGlassWarning");
+//BorderlessStainedGlass
+document.getElementById('BorderlessStainedGlass').onchange = function() {
+    compatibilityCheck("BorderlessStainedGlass", "BorderlessStainedGlassWarning");
 }
 
-//CleanSTGlass
-document.getElementById('CleanSTGlass').onchange = function() {
-    compatibilityCheck("CleanSTGlass", "CleanSTGlassWarning");
+//CleanStainedGlass
+document.getElementById('CleanStainedGlass').onchange = function() {
+    compatibilityCheck("CleanStainedGlass", "CleanStainedGlassWarning");
 }
 
 //TransparentShields
@@ -159,24 +159,24 @@ document.getElementById('LowerShield').onchange = function() {
     compatibilityCheck("LowerShield", "LowShieldWarning");
 }
 
-//transPump
-document.getElementById('transPump').onchange = function() {
-    compatibilityCheck("transPump", "transPumpWarning");
+//TransparentPumpkin
+document.getElementById('TransparentPumpkin').onchange = function() {
+    compatibilityCheck("TransparentPumpkin", "TransparentPumpkinWarning");
 }
 
-//NoPump
-document.getElementById('NoPump').onchange = function() {
-    compatibilityCheck("NoPump", "NoPumpWarning");
+//NoPumpkinOverlay
+document.getElementById('NoPumpkinOverlay').onchange = function() {
+    compatibilityCheck("NoPumpkinOverlay", "NoPumpkinOverlayWarning");
 }
 
-//altpart
-document.getElementById('altpart').onchange = function() {
-    compatibilityCheck("altpart", "altpartWarning");
+//AlternateParticles
+document.getElementById('AlternateParticles').onchange = function() {
+    compatibilityCheck("AlternateParticles", "AlternateParticlesWarning");
 }
 
-//unobrain
-document.getElementById('unobrain').onchange = function() {
-    compatibilityCheck("unobrain", "unobrainWarning");
+//UnobtrusiveRain
+document.getElementById('UnobtrusiveRain').onchange = function() {
+    compatibilityCheck("UnobtrusiveRain", "UnobtrusiveRainWarning");
 }
 
 //BlackNetherBricks
@@ -184,9 +184,9 @@ document.getElementById('BlackNetherBricks').onchange = function() {
     compatibilityCheck("BlackNetherBricks", "BlackNetherBricksWarning");
 }
 
-//brig_neth
-document.getElementById('brig_neth').onchange = function() {
-    compatibilityCheck("brig_neth", "brig_nethWarning");
+//BrighterNether
+document.getElementById('BrighterNether').onchange = function() {
+    compatibilityCheck("BrighterNether", "BrighterNetherWarning");
 }
 
 //OreBorders
@@ -199,129 +199,129 @@ document.getElementById('UniformOres').onchange = function() {
     compatibilityCheck("UniformOres", "UniformOresWarning");
 }
 
-//gr_sid
-document.getElementById('gr_sid').onchange = function() {
-    compatibilityCheck("gr_sid", "gr_sidWarning");
+//GrassSides
+document.getElementById('GrassSides').onchange = function() {
+    compatibilityCheck("GrassSides", "GrassSidesWarning");
 }
 
-//low_grass
-document.getElementById('low_grass').onchange = function() {
-    compatibilityCheck("low_grass", "low_grassWarning");
+//LowerGrass
+document.getElementById('LowerGrass').onchange = function() {
+    compatibilityCheck("LowerGrass", "LowerGrassWarning");
 }
 
-//myc_sid
-document.getElementById('myc_sid').onchange = function() {
-    compatibilityCheck("myc_sid", "myc_sidWarning");
+//MyceliumSides
+document.getElementById('MyceliumSides').onchange = function() {
+    compatibilityCheck("MyceliumSides", "MyceliumSidesWarning");
 }
 
-//low_myc
-document.getElementById('low_myc').onchange = function() {
-    compatibilityCheck("low_myc", "low_mycWarning");
+//LowerMycelium
+document.getElementById('LowerMycelium').onchange = function() {
+    compatibilityCheck("LowerMycelium", "LowerMyceliumWarning");
 }
 
-//no_peb_dirt
-document.getElementById('no_peb_dirt').onchange = function() {
-    compatibilityCheck("no_peb_dirt", "no_peb_dirtWarning");
+//Pebble-lessDirt
+document.getElementById('Pebble-lessDirt').onchange = function() {
+    compatibilityCheck("Pebble-lessDirt", "Pebble-lessDirtWarning");
 }
 
-//path_sid
-document.getElementById('path_sid').onchange = function() {
-    compatibilityCheck("path_sid", "path_sidWarning");
+//PathSides
+document.getElementById('PathSides').onchange = function() {
+    compatibilityCheck("PathSides", "PathSidesWarning");
 }
 
-//low_path
-document.getElementById('low_path').onchange = function() {
-    compatibilityCheck("low_path", "low_pathWarning");
+//LowerPaths
+document.getElementById('LowerPaths').onchange = function() {
+    compatibilityCheck("LowerPaths", "LowerPathsWarning");
 }
 
-//pod_side
-document.getElementById('pod_side').onchange = function() {
-    compatibilityCheck("pod_side", "pod_sideWarning");
+//PodzolSides
+document.getElementById('PodzolSides').onchange = function() {
+    compatibilityCheck("PodzolSides", "PodzolSidesWarning");
 }
 
-//low_pod
-document.getElementById('low_pod').onchange = function() {
-    compatibilityCheck("low_pod", "low_podWarning");
+//LowerPodzol
+document.getElementById('LowerPodzol').onchange = function() {
+    compatibilityCheck("LowerPodzol", "LowerPodzolWarning");
 }
 
-//snow_sid
-document.getElementById('snow_sid').onchange = function() {
-    compatibilityCheck("snow_sid", "snow_sidWarning");
+//SnowSides
+document.getElementById('SnowSides').onchange = function() {
+    compatibilityCheck("SnowSides", "SnowSidesWarning");
 }
 
-//low_snow
-document.getElementById('low_snow').onchange = function() {
-    compatibilityCheck("low_snow", "low_snowWarning");
+//LowerSnow
+document.getElementById('LowerSnow').onchange = function() {
+    compatibilityCheck("LowerSnow", "LowerSnowWarning");
 }
 
-//crim_sid
-document.getElementById('crim_sid').onchange = function() {
-    compatibilityCheck("crim_sid", "crim_sidWarning");
+//CrimsonNyliumSides
+document.getElementById('CrimsonNyliumSides').onchange = function() {
+    compatibilityCheck("CrimsonNyliumSides", "CrimsonNyliumSidesWarning");
 }
 
-//low_crim
-document.getElementById('low_crim').onchange = function() {
-    compatibilityCheck("low_crim", "low_crimWarning");
+//LowerCrimsonNylium
+document.getElementById('LowerCrimsonNylium').onchange = function() {
+    compatibilityCheck("LowerCrimsonNylium", "LowerCrimsonNyliumWarning");
 }
 
-//warp_sid
-document.getElementById('warp_sid').onchange = function() {
-    compatibilityCheck("warp_sid", "warp_sidWarning");
+//WarpedNyliumSides
+document.getElementById('WarpedNyliumSides').onchange = function() {
+    compatibilityCheck("WarpedNyliumSides", "WarpedNyliumSidesWarning");
 }
 
-//low_warp
-document.getElementById('low_warp').onchange = function() {
-    compatibilityCheck("low_warp", "low_warpWarning");
+//LowerWarpedNylium
+document.getElementById('LowerWarpedNylium').onchange = function() {
+    compatibilityCheck("LowerWarpedNylium", "LowerWarpedNyliumWarning");
 }
 
-//nobeacbeam
-document.getElementById('nobeacbeam').onchange = function() {
-    compatibilityCheck("nobeacbeam", "nobeacbeamWarning");
+//NoBeaconBeam
+document.getElementById('NoBeaconBeam').onchange = function() {
+    compatibilityCheck("NoBeaconBeam", "NoBeaconBeamWarning");
 }
 
-//bacon_beam
-document.getElementById('bacon_beam').onchange = function() {
-    compatibilityCheck("bacon_beam", "bacon_beamWarning");
+//BaconBeam
+document.getElementById('BaconBeam').onchange = function() {
+    compatibilityCheck("BaconBeam", "BaconBeamWarning");
 }
 
-//sticky_sides
-document.getElementById('sticky_sides').onchange = function() {
-    compatibilityCheck("sticky_sides", "sticky_sidesWarning");
+//StickyPistonSides
+document.getElementById('StickyPistonSides').onchange = function() {
+    compatibilityCheck("StickyPistonSides", "StickyPistonSidesWarning");
 }
 
-//honey_slime
-document.getElementById("honey_slime").onchange = function() {
-    compatibilityCheck("honey_slime", "honey_slimeWarning");
+//HoneySlime
+document.getElementById("HoneySlime").onchange = function() {
+    compatibilityCheck("HoneySlime", "HoneySlimeWarning");
 }
 
 //Dark Mode
-document.getElementById("darkmode").onchange = function() {
-    compatibilityCheck("darkmode", "darkmodeWarning");
+document.getElementById("DarkMode").onchange = function() {
+    compatibilityCheck("DarkMode", "DarkModeWarning");
 }
 
 //Mobile Export EDU Warning
-document.getElementById("mobileExport").onchange = function() {
-    compatibilityCheck("mobileExport", "mobileExportWarning");
+document.getElementById("MobileExport").onchange = function() {
+    compatibilityCheck("MobileExport", "MobileExportWarning");
 }
 
 //Classic Pano
-document.getElementById("classicpano").onchange = function() {
-    compatibilityCheck("classicpano", "classicpanoWarning");
+document.getElementById("ClassicPanorama").onchange = function() {
+    compatibilityCheck("ClassicPanorama", "ClassicPanoramaWarning");
 }
 
 //Ocean Pano
-document.getElementById("oceanpano").onchange = function() {
-    compatibilityCheck("oceanpano", "oceanpanoWarning");
+document.getElementById("OceanPanorama").onchange = function() {
+    compatibilityCheck("OceanPanorama", "OceanPanoramaWarning");
 }
 
 //Village Pano
-document.getElementById("villagepano").onchange = function() {
-    compatibilityCheck("villagepano", "villagepanoWarning");
+document.getElementById("VillagePanorama").onchange = function() {
+    compatibilityCheck("VillagePanorama", "VillagePanoramaWarning");
 }
 
 //Bees Pano
-document.getElementById("beepano").onchange = function() {
-    compatibilityCheck("beepano", "beepanoWarning");
+document.getElementById("BeesPanorama").onchange = function() {
+    compatibilityCheck("BeesPanorama", "BeesPanoramaWarning");
 }
 
 //Nether Pano
