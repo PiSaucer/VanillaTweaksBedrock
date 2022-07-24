@@ -3,7 +3,7 @@
 - [ ] Make site look better
   - [x] Add images for each module
   - [x] Make the menu colaspable
-  - [ ] Add open all menus
+  - [x] Add open all menus
   - [ ] Select everyone from one menu
   - [ ] Dark Mode Switch (default dark)
 - [x] Add to mcpedl

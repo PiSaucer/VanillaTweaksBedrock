@@ -44,8 +44,22 @@ jQuery(function($) {
         $('#select-all').click(function() {
             var checked = this.checked;
             $('input[type="checkbox"]').each(function() {
-                this.checked = checked;
+                if (this.id !== "open-all") {
+                    this.checked = checked;
+                }
             });
+        });
+
+        let openAllBool = false;
+        $('#open-all').click(function() {
+            openAllBool = !openAllBool;
+            if (openAllBool) {
+                $('.collapse').addClass("show");
+                document.getElementById("open-all-text").innerHTML = "Close All Categories";
+            } else {
+                $('.collapse').removeClass("show");
+                document.getElementById("open-all-text").innerHTML = "Open All Categories";
+            }
         })
     });
 
