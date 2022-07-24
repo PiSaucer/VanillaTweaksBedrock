@@ -125,7 +125,7 @@ document.getElementById('select-all').onchange = function() {
     compatibilityCheck("BeesPanorama", "BeesPanoramaWarning");
 
     //Nether Pano
-    compatibilityCheck("netherpano", "netherpanoWarning");
+    compatibilityCheck("NetherPanorama", "NetherPanoramaWarning");
 }
 
 
@@ -325,6 +325,6 @@ document.getElementById("BeesPanorama").onchange = function() {
 }
 
 //Nether Pano
-document.getElementById("netherpano").onchange = function() {
-    compatibilityCheck("netherpano", "netherpanoWarning");
+document.getElementById("NetherPanorama").onchange = function() {
+    compatibilityCheck("NetherPanorama", "NetherPanoramaWarning");
 }
