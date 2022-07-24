@@ -4,11 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Not Released Yet (Currently working on) [0.0.5] - 2022-02-20
+## [0.0.5] - 2022-07-24
 ### Added
-- Converter page to make my life easier
+- Converter page
 - [`Sitemap.xml`](sitemap.xml)
 - [`todo.md`](todo.md)
+- Ability to upload old packs to modify them
+- Added/Edited ids for each module
+- Remove first and last empty lines in `PACKS.txt`
 
 ### Changed
 - Web hosting from Firebase to GitHub Pages
@@ -16,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - [readme.txt 404 error - Issue 3](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/3)
+- [Load, Update, and Modify tweaks - Issue 4](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/4)
 - [Fix Mobile Export Option for EDU Version - Issue 5](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/5)
 
 ## [0.0.4] - 2021-02-22
