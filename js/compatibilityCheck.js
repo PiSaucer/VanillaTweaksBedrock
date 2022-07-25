@@ -112,20 +112,24 @@ document.getElementById('select-all').onchange = function() {
     //Mobile Export EDU Warning
     compatibilityCheck("MobileExport", "MobileExportWarning");
 
-    //Classic Pano
+    //Classic Panorama
     compatibilityCheck("ClassicPanorama", "ClassicPanoramaWarning");
 
-    //Ocean Pano
+    //Ocean Panorama
     compatibilityCheck("OceanPanorama", "OceanPanoramaWarning");
 
-    //Village Pano
+    //Village Panorama
     compatibilityCheck("VillagePanorama", "VillagePanoramaWarning");
 
-    //Bees Pano
+    //Bees Panorama
     compatibilityCheck("BeesPanorama", "BeesPanoramaWarning");
 
-    //Nether Pano
+    //Nether Panorama
     compatibilityCheck("NetherPanorama", "NetherPanoramaWarning");
+
+    //Amethyst Geode Panorama
+    compatibilityCheck("AmethystGeodePanorama", "AmethystGeodePanoramaWarning");
+
 }
 
 
@@ -327,4 +331,9 @@ document.getElementById("BeesPanorama").onchange = function() {
 //Nether Pano
 document.getElementById("NetherPanorama").onchange = function() {
     compatibilityCheck("NetherPanorama", "NetherPanoramaWarning");
+}
+
+//AmethystGeodePanorama
+document.getElementById("AmethystGeodePanorama").onchange = function() {
+    compatibilityCheck("AmethystGeodePanorama", "AmethystGeodePanoramaWarning");
 }
