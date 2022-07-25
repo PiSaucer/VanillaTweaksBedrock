@@ -4,12 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.0.6] - 2022-07-24
+## [0.0.6] - 2022-07-25
 ### Added
 - Checkbox to open all Categories
 - Renamed All `mcpack` nested folders
+- Amethyst Geode Panorama
 
-## [0.0.5] - 2022-07-24
+### Fixed
+- Empty Lines in `PACKS.txt`
+- Some Folder Typos
+
+## [[0.0.5]](https://github.com/PiSaucer/VanillaTweaksBedrock/releases/tag/0.0.5) - 2022-07-24
 ### Added
 - Converter page
 - [`Sitemap.xml`](sitemap.xml)
@@ -27,7 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [Load, Update, and Modify tweaks - Issue 4](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/4)
 - [Fix Mobile Export Option for EDU Version - Issue 5](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/5)
 
-## [0.0.4] - 2021-02-22
+## [[0.0.4]](https://github.com/PiSaucer/VanillaTweaksBedrock/releases/tag/0.0.4) - 2021-02-22
 ### Added
 - Change the jquery from 1.8.3 to 3.5.1
 - Added Sortable.js
@@ -61,7 +66,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Concorp Wings
     - Honey Slime
 
-## [0.0.3] - 2021-02-05
+## [[0.0.3]](https://github.com/PiSaucer/VanillaTweaksBedrock/releases/tag/0.0.3) - 2021-02-05
 ### Added
 - LICENSE.html was created
 - Lower and Sides
@@ -82,7 +87,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Shorter Grass
     - Shorter Tall Grass
 
-## [0.0.2] - 2021-01-24
+## [[0.0.2]](https://github.com/PiSaucer/VanillaTweaksBedrock/releases/tag/0.0.2) - 2021-01-24
 ### Added
 - Logo
 - Favicons
@@ -107,7 +112,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Brighter Nether
     - Circular Sun and Moon 
 
-## [0.0.1] - 2021-01-22
+## [[0.0.1]](https://github.com/PiSaucer/VanillaTweaksBedrock/releases/tag/0.0.1) - 2021-01-22
 ### Added
 - Basic Download Feature
 - Unobtrusive
