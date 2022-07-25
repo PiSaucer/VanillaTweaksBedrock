@@ -94,7 +94,7 @@ jQuery(function($) {
             });
 
             $(':checked').each(function() {
-                if (this.id !== "select-all") {
+                if (this.id !== "select-all" && this.id !== "open-all") {
                     packNamesString += $(this).data("modulename") + "\n";
                     packNameArray.push($(this).data("modulename"));
                 }
