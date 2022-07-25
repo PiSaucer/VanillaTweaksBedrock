@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.6] - 2022-07-24
 ### Added
 - Checkbox to open all Categories
+- Renamed All `mcpack` nested folders
 
 ## [0.0.5] - 2022-07-24
 ### Added
