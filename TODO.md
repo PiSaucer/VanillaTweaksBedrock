@@ -98,8 +98,8 @@ Can't do Options Background Yet
 - [x] Amethyst Geode
 - [x] Sunset Valley
 - [x] The End
-- [ ] pack.png
-- [ ] Nostalgia
+- [x] pack.png
+- [x] Nostalgia
 - [ ] Oceanside Extreme Hills
 - [ ] Lakeside Sunset
 - [ ] Underground Lava Poll

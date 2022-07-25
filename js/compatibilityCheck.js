@@ -136,6 +136,11 @@ document.getElementById('select-all').onchange = function() {
     //The End Panorama
     compatibilityCheck("TheEndPanorama", "TheEndPanoramaWarning");
 
+    //Pack.png Panorama
+    compatibilityCheck("Pack.pngPanorama", "Pack.pngPanoramaWarning");
+
+    //Nostalgia Panorama
+    compatibilityCheck("NostalgiaPanorama", "NostalgiaPanoramaWarning");
 }
 
 
@@ -352,4 +357,14 @@ document.getElementById("SunsetValleyPanorama").onchange = function() {
 //The End Panorama
 document.getElementById("TheEndPanorama").onchange = function() {
     compatibilityCheck("TheEndPanorama", "TheEndPanoramaWarning");
+}
+
+//Pack.png Panorama
+document.getElementById("Pack.pngPanorama").onchange = function() {
+    compatibilityCheck("Pack.pngPanorama", "Pack.pngPanoramaWarning");
+}
+
+//NostalgiaPanorama
+document.getElementById("NostalgiaPanorama").onchange = function() {
+    compatibilityCheck("NostalgiaPanorama", "NostalgiaPanoramaWarning");
 }

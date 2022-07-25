@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Amethyst Geode Panorama
 - Sunset Valley Panorama
 - The End Panorama
+- Nostalgia Panorama
 
 ### Fixed
 - Empty Lines in `PACKS.txt`
