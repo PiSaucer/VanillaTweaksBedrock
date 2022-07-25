@@ -130,6 +130,8 @@ document.getElementById('select-all').onchange = function() {
     //Amethyst Geode Panorama
     compatibilityCheck("AmethystGeodePanorama", "AmethystGeodePanoramaWarning");
 
+    //Sunset Valley Panorama
+    compatibilityCheck("SunsetValleyPanorama", "SunsetValleyPanoramaWarning");
 }
 
 
@@ -308,32 +310,37 @@ document.getElementById("MobileExport").onchange = function() {
     compatibilityCheck("MobileExport", "MobileExportWarning");
 }
 
-//Classic Pano
+//Classic Panorama
 document.getElementById("ClassicPanorama").onchange = function() {
     compatibilityCheck("ClassicPanorama", "ClassicPanoramaWarning");
 }
 
-//Ocean Pano
+//Ocean Panorama
 document.getElementById("OceanPanorama").onchange = function() {
     compatibilityCheck("OceanPanorama", "OceanPanoramaWarning");
 }
 
-//Village Pano
+//Village Panorama
 document.getElementById("VillagePanorama").onchange = function() {
     compatibilityCheck("VillagePanorama", "VillagePanoramaWarning");
 }
 
-//Bees Pano
+//Bees Panorama
 document.getElementById("BeesPanorama").onchange = function() {
     compatibilityCheck("BeesPanorama", "BeesPanoramaWarning");
 }
 
-//Nether Pano
+//Nether Panorama
 document.getElementById("NetherPanorama").onchange = function() {
     compatibilityCheck("NetherPanorama", "NetherPanoramaWarning");
 }
 
-//AmethystGeodePanorama
+//Amethyst Geode Panorama
 document.getElementById("AmethystGeodePanorama").onchange = function() {
     compatibilityCheck("AmethystGeodePanorama", "AmethystGeodePanoramaWarning");
+}
+
+//Sunset Valley Panorama
+document.getElementById("SunsetValleyPanorama").onchange = function() {
+    compatibilityCheck("SunsetValleyPanorama", "SunsetValleyPanoramaWarning");
 }
