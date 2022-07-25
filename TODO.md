@@ -9,7 +9,7 @@
 - [x] Add to mcpedl
 - [x] Convertor
 - [ ] Improved README.md
-- [ ] Update Folder Names
+- [x] Update Folder Names
 
 
 ## Issues
@@ -19,6 +19,10 @@
   - [x] Read Data from a file - [vanillatweaksbedrock.ml/detect/](https://vanillatweaksbedrock.ml/detect/)
   - [x] Enable packs from the data
 - [x] [Fix Mobile Export Option for EDU Version - Issue 5](https://github.com/PiSaucer/VanillaTweaksBedrock/issues/5)
+
+## Packs to Update
+- [ ] UniformBorders
+- [ ] UniformOres
 
 ## Packs to Add 
 
@@ -82,15 +86,16 @@
 - [ ] Numbered Hotbar
 - [ ] Transparent UI
 
-Can't do Options Background
+Can't do Options Background Yet
 
 ### Menu Panoramas
 - [x] Classic
 - [x] Ocean
 - [x] Village
 - [x] Bees
-- [ ] Nether
+- [x] Nether
 - [ ] Amethyst Geode
+- [ ] Sunset Valley
 - [ ] The End
 - [ ] pack.png
 - [ ] Nostalgia
@@ -105,6 +110,7 @@ Can't do Options Background
 - [ ] Xisuma's Hermitcraft Base (Season 5)
 - [ ] Xisuma's Hermitcraft Base (Season 6)
 - [ ] Xisuma's Hermitcraft Base (Season 7)
+- [ ] Xisuma's Hermitcraft Base (Season 8)
 - [ ] Stridey's Resource Pack Development World
 
 ### Create Retro
@@ -176,10 +182,8 @@ Can't do Options Background
 ## Custom Packs
 - [ ] Remove Marketplace Button Style
 - [ ] Remove Vignette
+- [ ] Technoblade Pig
 - [ ] New Caledonia
-  - [ ] New Caledonia Menu Panorama
-    - [ ] After-1.4.12
-    - [ ] Before-1.4.12
   - [ ] NC Food and Stages
   - [ ] NC Phantom Membrane
   - [ ] NC Character Beds
