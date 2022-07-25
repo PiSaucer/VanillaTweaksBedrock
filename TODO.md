@@ -95,9 +95,9 @@ Can't do Options Background Yet
 - [x] Village
 - [x] Bees
 - [x] Nether
-- [ ] Amethyst Geode
-- [ ] Sunset Valley
-- [ ] The End
+- [x] Amethyst Geode
+- [x] Sunset Valley
+- [x] The End
 - [ ] pack.png
 - [ ] Nostalgia
 - [ ] Oceanside Extreme Hills

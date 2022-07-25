@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Checkbox to open all Categories
 - Renamed All `mcpack` nested folders
 - Amethyst Geode Panorama
+- Sunset Valley Panorama
+- The End Panorama
 
 ### Fixed
 - Empty Lines in `PACKS.txt`

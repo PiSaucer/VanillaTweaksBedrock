@@ -132,6 +132,10 @@ document.getElementById('select-all').onchange = function() {
 
     //Sunset Valley Panorama
     compatibilityCheck("SunsetValleyPanorama", "SunsetValleyPanoramaWarning");
+
+    //The End Panorama
+    compatibilityCheck("TheEndPanorama", "TheEndPanoramaWarning");
+
 }
 
 
@@ -343,4 +347,9 @@ document.getElementById("AmethystGeodePanorama").onchange = function() {
 //Sunset Valley Panorama
 document.getElementById("SunsetValleyPanorama").onchange = function() {
     compatibilityCheck("SunsetValleyPanorama", "SunsetValleyPanoramaWarning");
+}
+
+//The End Panorama
+document.getElementById("TheEndPanorama").onchange = function() {
+    compatibilityCheck("TheEndPanorama", "TheEndPanoramaWarning");
 }
