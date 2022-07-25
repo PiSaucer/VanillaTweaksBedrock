@@ -23,6 +23,7 @@
 ## Packs to Update
 - [ ] UniformBorders
 - [ ] UniformOres
+- [ ] DarkMode
 
 ## Packs to Add 
 

@@ -94,14 +94,15 @@ jQuery(function($) {
             });
 
             $(':checked').each(function() {
-                packNamesString += $(this).data("modulename") + "\n";
-                packNameArray.push($(this).data("modulename"));
+                if (this.id !== "select-all") {
+                    packNamesString += $(this).data("modulename") + "\n";
+                    packNameArray.push($(this).data("modulename"));
+                }
             });
             packNamesString = packNamesString.replaceAll(/undefined/ig, "").replaceAll(/ /ig, "");
             packNameArray = packNameArray.filter(function(x) {
                 return x !== undefined;
             });
-            packNamesString = packNamesString.replace(/.*/, "").substr(1);
             packNamesString = packNamesString.substring(0, packNamesString.length - 1);
 
             // master files here
