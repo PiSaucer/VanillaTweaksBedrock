@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://tweaks.pisaucer.com/sitemap.xml
